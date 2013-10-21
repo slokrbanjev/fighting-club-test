@@ -1,0 +1,626 @@
+@import 'normalize';
+@import 'compass';
+@import 'helper-classes';
+@import 'zen';
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+// Zen Grids general parameters
+$zen-column-count: 12;
+$zen-gutter-width: 36px;
+$zen-auto-include-item-base: false;
+
+$color-green: #aabf46;
+$color_black: #000;
+$color-grey: #333;
+$color_white: #fff;
+
+// Table Colours
+$color-boxing: #a8bd45;
+$color-kickboxing: #6f8c13;
+$color-juniorboxing: #49561a;
+$color-jj: #b6c27c;
+$color-jjkids: #c4c6b3;
+$color-judo: #74736a;
+
+$box-sizing-polyfill-path: "boxsizing.htc";
+
+// Lets add some generic styles to our section blocks in the main part of our website content.
+
+// Typical div parameters for 3 & 4 column content.
+// Zen Grids layout parameters for 3 & 4 column divs and spans.
+.zen-box {
+  @include zen-grid-item-base();
+  img {
+    width: 100%;
+  }
+
+  // Zen Clear
+    @include zen-clear();
+  
+  // For three column layouts
+  &.three-col-1 {
+    @include zen-grid-item(12, 1);
+  }
+  &.three-col-2 {
+    @include zen-grid-item(12, 1);
+  }
+  &.three-col-3 {
+    @include zen-grid-item(12, 1);
+  }
+  @media only screen and (min-width: 481px) {
+    &.three-col-1 {
+      @include zen-grid-item(4, 1);
+    }
+    &.three-col-2 {
+      @include zen-grid-item(4, 5);
+    }
+    &.three-col-3 {
+      @include zen-grid-item(4, 9);
+    }
+  }
+
+  // For four column layouts
+  &.four-col-1 {
+    @include zen-grid-item(12, 1);
+  }
+  &.four-col-2 {
+    @include zen-grid-item(12, 1);
+  }
+  &.four-col-3 {
+    @include zen-grid-item(12, 1);
+  }
+  &.four-col-4 {
+    @include zen-grid-item(12, 1);
+  }
+  // Two up
+  @media only screen and (min-width: 481px) {
+    &.four-col-1 {
+      @include zen-grid-item(6, 1);
+    }
+    &.four-col-2 {
+      @include zen-grid-item(6, 7);
+    }
+    &.four-col-3 {
+      @include zen-grid-item(6, 1);
+    }
+    &.four-col-4 {
+      @include zen-grid-item(6, 7);
+    }
+    &.four-col-2,
+    &.four-col-4 {
+      @include zen-clear(none);
+    }
+  }
+  //Four up
+  @media only screen and (min-width: 768px) {
+    &.four-col-1 {
+      @include zen-grid-item(3, 1);
+    }
+    &.four-col-2 {
+      @include zen-grid-item(3, 4);
+    }
+    &.four-col-3 {
+      @include zen-grid-item(3, 7);
+    }
+    &.four-col-4 {
+      @include zen-grid-item(3, 10);
+    }
+    &.four-col-3 {
+      @include zen-clear(none);
+    }
+  }
+
+  // Full page widths
+  &.full {
+    @include zen-grid-item(12, 1);
+  }
+}
+
+// Title Description Text wraps to eliminate need for line breaks.
+.title-descriptions {
+  max-width: 40%;
+}
+
+.content_wrapper {
+  margin-bottom: 2em;
+}
+
+// Sets consistent max-width and margin for site content.
+//header, section, .language-menu 
+.container {
+  @include clearfix;
+  padding: 0 1.8em;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+// Begin resets: General positioning
+* {
+  @include box-sizing(border-box); 
+  ::selection {background: $color-green;}
+  ::-moz-selection {background: $color-green;}
+}
+
+body { // Typography 
+  font-size: 20px;
+  font-weight: 400;
+  font-family: lato;
+  @media only screen and (max-width:1280px) {
+    font-size: 18px;
+  }
+  @media only screen and (max-width:1150px) {
+    font-size: 16px;
+  }
+  @media only screen and (max-width:1050px) {
+    font-size: 14px;
+  }
+
+  a { // links
+    @include transition(all 0.3s);
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+  }
+  a:hover { //links on hover
+    @include transition(all 0.3s);
+    text-decoration: none;
+    font-weight: 600;
+    color: $color-green;
+  }
+
+  // Adds background to entire body element.
+  @include zen-grid-container;
+  background: #f5f5f5 url(../img/noise.png) repeat;
+  background-attachment: scroll;
+}
+
+// Navigation margins set to zero.
+nav ul {
+  margin: 0;
+}
+
+// End resets
+header, section, {
+  @include clearfix;
+}
+
+// Language switcher menu
+.topbar {
+  @include clearfix;
+  background-color: #111;
+  margin-bottom: 2em;
+  border-bottom: 1px solid #eee;
+  // Language switcher word styles
+  .language-menu {
+    text-align: right;
+    padding: 0 0 0.16em;
+    margin: 0;
+    li {
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      a {
+        @include transition(all 0.3s);
+        font-weight: 200;
+        color: #ccc;
+        text-transform: uppercase;
+        font-size: 0.666666em;
+        padding: 0 0 0.25em 0.5em;
+      }
+      a.active {
+        font-weight: 600;
+        color: #fff;
+      }
+      a:hover {
+        @include single-text-shadow;
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Header formatting, can wrap in header if need be.
+header {
+  .main-logo { // Our logo
+    @media only screen and (min-width: 481px) {
+      @include zen-grid-item-base();
+      @include zen-grid-item(6, 1);
+    }
+    @media only screen and (min-width: 481px) {
+      @include zen-grid-item(3, 1)
+    }
+    img {
+      width: 100%;
+      min-width: 200px;
+    }
+  }
+  // Our primary navigation menu.
+  .main-menu {
+    text-align: center;
+    margin-top: 1em;
+    padding: 0;
+    vertical-align: middle;
+    @media only screen and (min-width: 481px) {
+      @include zen-grid-item-base();
+      @include zen-grid-item(6, 7);
+      @include zen-nested-container();
+      text-align: right;
+      margin-top: 0;
+    }
+    @media only screen and (min-width: 481px) {
+      @include zen-grid-item(9, 4)
+    }
+    li {
+      display: inline-block;
+      a {
+        text-transform: uppercase;
+        padding: 0.6em;
+        display: inline-block;
+        @media only screen and (min-width: 481px) {
+          padding-right: 0;// 0 0 0.6em;
+        }
+      }
+    }
+  }
+}
+
+// Intro page Slogan and Boxing gloves
+.main-slogan {
+  font-size: 4em;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 0.5em;
+  //@media only 
+  @media only screen and (max-width: 768px) {
+    margin-top: 0.8em;
+  }
+}
+
+// "Once a warrior" and By-line Quotes Zen Grids parameters
+.warrior,
+.by-line {
+  @include zen-grid-item-base();
+  @include zen-grid-item(8, 3);
+  clear: both;
+  p { // By-line special Typography parameters
+    margin: 0;
+    font-family: lato;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.333333em;
+  }
+  img { //  Gloves Images to Zen Grid
+    &.glove-left { @include zen-grid-item(5, 2);}
+    &.glove-right { @include zen-grid-item(5, 7);}
+  }
+}
+
+.button-wrapper {
+  @include zen-clear;
+  padding-top: 2em;
+}
+
+.big-button {
+  @include transition(all 0.6s);
+  @include border-radius(3px);
+  background-color: #000;
+  color: #fff;
+  padding: 0.36em 0.58em;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  &:hover {
+    @include transition(all 0.6s);
+    background-color: $color-green;
+    color: #fff;
+  }
+}
+
+
+
+//Sass version of timetable.
+
+
+.dow-container {
+  font-size: 16px;     // Your base font-size in pixels
+  $em: 16px / 1em;  // Shorthand for outputting ems
+  // General Settings
+  $timeslots-per-hour: 4; // Time slots per hour.
+  $timeslot-height: 1em; // One timeslot = 15 mins
+  // Table Specifics
+  $tableStartTime: 15.00; // Time the table begins in decimals e.g. 15.75 = 15:45
+  $total-hours: 7; // Number of hours in the table.
+  $days-in-week: 5; // Number of days in the table.
+  $headerHeight: 1.5em;
+
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.86em;
+  position: relative;
+  width: 100%-36px;
+
+  .session {
+    display: table;
+    .text-surround {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  @mixin sessionBlock($dayOfWeek, $startTime /* Start time is using decimals e.g. 15.75 = 15:45 */, $durationMinutes, $numConEvents: 1, $posOfConEvent: 1 ) { // Day of week
+    $sessionWidth: (100%/$days-in-week)/$numConEvents;
+    position: absolute;
+    width: 100%;
+    top: ($startTime - $tableStartTime) * $timeslots-per-hour * $timeslot-height + $headerHeight;
+    height: $durationMinutes/15 * $timeslot-height;
+    width: $sessionWidth;
+    left: (($dayOfWeek - 1) * (100%/$days-in-week))+(($posOfConEvent - 1)*$sessionWidth);
+    border: 1px solid transparent;
+    color: $color-white;
+  }
+  .calendar {
+    border: 1px lighten($color-grey, 20%) solid;
+    width: 100%;
+    th {
+      height: $headerHeight;
+      vertical-align: middle;
+      width: 99%/$days-in-week;
+      color: $color-white;
+      background-color: $color-grey;
+    }
+    .day-of-week {
+      border: 1px lighten($color-grey, 20%) solid;
+      height: $timeslot-height*$total-hours*$timeslots-per-hour;
+    }
+  }
+
+  #kickboxing-m1 {
+    @include sessionBlock(1, 15.00,75, 1, 1);
+    border-color: darken($color-kickboxing, 20%);
+    background-color: $color-kickboxing;
+  }
+  #jj-kids-m1 {
+    @include sessionBlock(1, 18.25,60, 2, 2);
+    border-color: darken($color-jjkids, 20%);
+    background-color: $color-jjkids;
+  }
+  #boxing-m1 {
+    @include sessionBlock(1, 18.00,90, 2, 1);
+    border-color: darken($color-boxing, 20%);
+    background-color: $color-boxing;
+  }
+  #boxing-m2 {
+    @include sessionBlock(1, 19.50,90, 2, 2);
+    border-color: darken($color-boxing, 20%);
+    background-color: $color-boxing;
+  }
+  #jj-m1 {
+    @include sessionBlock(1, 20.50,90, 2, 1);
+    border-color: darken($color-jj, 20%);
+    background-color: $color-jj;
+  }
+  #boxing-juniors-t1 {
+    @include sessionBlock(2, 17.50,75, 1, 1);
+    border-color: darken($color-juniorboxing, 20%);
+    background-color: $color-juniorboxing;
+  }
+  #judo-t1 {
+    @include sessionBlock(2, 19.50,90, 1, 1);
+    border-color: darken($color-judo, 20%);
+    background-color: $color-judo;
+  }
+  #kickboxing-w1 {
+    @include sessionBlock(3, 15.00,75, 1, 1);
+    border-color: darken($color-kickboxing, 20%);
+    background-color: $color-kickboxing;
+  }
+  #jj-kids-w1 {
+    @include sessionBlock(3, 18.25,60, 2, 2);
+    border-color: darken($color-jjkids, 20%);
+    background-color: $color-jjkids;
+  }
+  #boxing-w1 {
+    @include sessionBlock(3, 18.00,90, 2, 1);
+    border-color: darken($color-boxing, 20%);
+    background-color: $color-boxing;
+  }
+  #boxing-w2 {
+    @include sessionBlock(3, 19.50,90, 2, 1);
+    border-color: darken($color-boxing, 20%);
+    background-color: $color-boxing;
+  }
+  #jj-w1 {
+    @include sessionBlock(3, 20.50,90, 2, 2);
+    border-color: darken($color-jj, 20%);
+    background-color: $color-jj;
+  }
+  #boxing-juniors-r1 {
+    @include sessionBlock(4, 17.50,75, 1, 1);
+    border-color: darken($color-juniorboxing, 20%);
+    background-color: $color-juniorboxing;
+  }
+  #judo-r1 {
+    @include sessionBlock(4, 19.50,90, 1, 1);
+    border-color: darken($color-judo, 20%);
+    background-color: $color-judo;
+  }
+  #kickboxing-f1 {
+    @include sessionBlock(5, 15.00,75, 1, 1);
+    border-color: darken($color-kickboxing, 20%);
+    background-color: $color-kickboxing;
+  }
+  #boxing-f1 {
+    @include sessionBlock(5, 19.50,90, 2, 1);
+    border-color: darken($color-boxing, 20%);
+    background-color: $color-boxing;
+  }
+  #jj-free-f1 {
+    @include sessionBlock(5, 19.50,90, 2, 2);
+    border-color: darken($color-jj, 20%);
+    background-color: $color-jj;
+  }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+// Styling for our footer.
+
+footer {
+  background-image: url(../img/Map.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-top-color: #696969;
+  border-top-style: solid;
+  border-top-width: 1px;
+  display: block;
+  color: #fff;
+
+  .overlay {
+    -webkit-transition-duration: 0.30000001192092896s;
+    -webkit-transition-property: opacity;
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0.746094);
+    background-image: none;
+    background-origin: padding-box;
+    display: block;
+  }
+
+  // Contact styling.
+  .contact-info {
+    h2, h3 {
+      color: #fff;
+    }
+    a {
+      color: $color-green;
+    }
+    a:hover {
+      color: #696969;
+    }
+    img {
+      width: 15%;
+    }
+    
+    // Email link styling.
+    .contact-email {
+      font-size:2.2em;
+      color: $color-green;
+    }
+
+    // Phone number styling.
+    .contact-phone {
+      font-size:1.4em;
+      color: $color-green;
+    }
+
+    // Contact address styling.
+    .contact-address {
+      font-weight: 200;
+    }
+  }
+  // Partner link styling.
+  .contact-info .partner-link {
+    display: block;
+    color: $color-white;
+    font-weight: 200;
+  }
+}
+
+
+
+
+
+// // Table General Parameters.
+
+// .timetable {
+//   text-transform: uppercase;
+//   text-align: center;
+//   border: 1px $color-grey solid;
+//   width: 100%;
+//   font-size: 0.86em;
+
+//   .table-head { 
+//     background-color: $color-grey; 
+//     color: $color_white; 
+//     border: 1px $color-grey solid;
+//     // padding: 10px; 
+//     vertical-align: top;
+//     text-align: center;
+//     font-size: 110%; 
+//     font-weight: bold;
+//     border-collapse: separate;
+//   }
+
+//   th {    
+//     &.day {
+//       width: 19%;
+//     }
+//   }
+
+//   td { // Styling for "Time" column.
+//     color: $color-white;
+//     &:nth-child(1) {
+//       color: $color-black;
+//       border: 1px $color-black solid;
+//     }
+//     &[colspan="3"] {
+//       width: 9.5%;
+//     }
+//     &[colspan="6"] {
+//       width: 19%;
+//     }
+//   }
+
+//   tr {
+//     padding: 4px;
+//     border-top: 1px lighten($color-black, 86%) solid;
+  
+//     // td colours for unique courses.
+//     .kick-boxing {
+//       border: 1px darken($color-kickboxing, 20%) solid;
+//       background-color: $color-kickboxing; 
+//     } 
+//     .boxing {
+//       border: 1px darken($color-boxing, 20%) solid;
+//       background-color: $color-boxing;
+//     } 
+//     .jj {
+//       border: 1px darken($color-jj, 20%) solid;
+//       background-color: $color-jj;
+//     }
+//     .jj-free {
+//       border: 1px darken($color-jj, 20%) solid;
+//       background-color: $color-jj;
+//     }
+//     .jj-kids {
+//       border: 1px darken($color-jjkids, 20%) solid;
+//       background-color: $color-jjkids;
+//     }
+//     .junior-boxing {
+//       border: 1px darken($color-juniorboxing, 20%) solid;
+//       background-color: $color-juniorboxing;
+//     }
+//     .judo {
+//       border: 1px darken($color-judo, 20%) solid;
+//       background-color: $color-judo;
+//     }
+//   }
+// }  
+
+
