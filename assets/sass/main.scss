@@ -2,6 +2,7 @@
 @import 'compass';
 @import 'helper-classes';
 @import 'zen';
+@import 'slippry';
 
 /* ==========================================================================
    Author's custom styles
@@ -16,6 +17,8 @@ $color-green: #aabf46;
 $color_black: #000;
 $color-grey: #333;
 $color_white: #fff;
+$color-font: #222;
+$color-titles: darken($color-green, 42%);
 
 // Table Colours
 $color-boxing: #a8bd45;
@@ -38,7 +41,13 @@ $box-sizing-polyfill-path: "boxsizing.htc";
   }
 
   // Zen Clear
-    @include zen-clear();
+    // @include zen-clear();
+  &.two-col-1 {
+    @include zen-grid-item(6, 1);
+  }
+  &.two-col-2 {
+    @include zen-grid-item(6, 7);
+  }  
   
   // For three column layouts
   &.three-col-1 {
@@ -53,6 +62,7 @@ $box-sizing-polyfill-path: "boxsizing.htc";
   @media only screen and (min-width: 481px) {
     &.three-col-1 {
       @include zen-grid-item(4, 1);
+      @include zen-clear();
     }
     &.three-col-2 {
       @include zen-grid-item(4, 5);
@@ -108,9 +118,6 @@ $box-sizing-polyfill-path: "boxsizing.htc";
     &.four-col-4 {
       @include zen-grid-item(3, 10);
     }
-    &.four-col-3 {
-      @include zen-clear(none);
-    }
   }
 
   // Full page widths
@@ -137,6 +144,11 @@ $box-sizing-polyfill-path: "boxsizing.htc";
   margin: 0 auto;
 }
 
+.bottom-margin {
+  @include clearfix;
+  margin-bottom: 2em;
+}
+
 // Begin resets: General positioning
 * {
   @include box-sizing(border-box); 
@@ -148,6 +160,8 @@ body { // Typography
   font-size: 20px;
   font-weight: 400;
   font-family: lato;
+  color: $color-font;
+  -webkit-font-smoothing: antialiased;
   @media only screen and (max-width:1280px) {
     font-size: 18px;
   }
@@ -222,6 +236,14 @@ header, section, {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $color-titles;
+}
+
+img {
+  opacity: 0.94;
+}
+
 // Header formatting, can wrap in header if need be.
 header {
   .main-logo { // Our logo
@@ -293,26 +315,40 @@ header {
     text-transform: uppercase;
     font-size: 1.333333em;
   }
-  img { //  Gloves Images to Zen Grid
-    &.glove-left { @include zen-grid-item(5, 2);}
-    &.glove-right { @include zen-grid-item(5, 7);}
+  .glove { //  Gloves Images to Zen Grid
+    @include transition(all 150ms);
+    &.glove-left {
+      @include zen-grid-item(5, 2);
+      @include transform(translateX(-46px));
+      &.punch {
+        @include transform(translateX(16px) rotate(5deg));
+      }
+    }
+    &.glove-right {
+      @include zen-grid-item(5, 7);
+      @include transform(translateX(46px));
+      &.punch {
+        @include transform(translateX(-16px) rotate(-5deg));
+      }
+    }
   }
 }
 
 .button-wrapper {
   @include zen-clear;
-  padding-top: 2em;
+  padding-top: 0.8em;
 }
 
 .big-button {
   @include transition(all 0.6s);
   @include border-radius(3px);
-  background-color: #000;
+  background: #111 url(../img/noise-b.png) repeat;
   color: #fff;
-  padding: 0.36em 0.58em;
+  padding: 0.36em 0.58em 0.4em;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
+  opacity: 0.94;
   &:hover {
     @include transition(all 0.6s);
     background-color: $color-green;
@@ -464,18 +500,7 @@ header {
     border-color: darken($color-jj, 20%);
     background-color: $color-jj;
   }
-
-
-
-
-
-
-
-
-
 }
-
-
 
 
 // Styling for our footer.
@@ -504,8 +529,12 @@ footer {
 
   // Contact styling.
   .contact-info {
+    @include zen-clear;
     h2, h3 {
       color: #fff;
+    }
+    h3 {
+      margin: 0.6em 0;
     }
     a {
       color: $color-green;
@@ -514,18 +543,22 @@ footer {
       color: #696969;
     }
     img {
-      width: 15%;
+      width: 25%;
+    }
+
+    .title-descriptions {
+      max-width: 80%;
     }
     
     // Email link styling.
     .contact-email {
-      font-size:2.2em;
+      font-size: 2.2em;
       color: $color-green;
     }
 
     // Phone number styling.
     .contact-phone {
-      font-size:1.4em;
+      font-size: 1.4em;
       color: $color-green;
     }
 
