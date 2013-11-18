@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('.main-menu a').click(function (e) {
+  $('.main-menu a, .smooth-link').click(function (e) {
   	e.preventDefault();
     $('body').animate({
       scrollTop: $($(this).attr('href')).offset().top

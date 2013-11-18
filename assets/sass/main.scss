@@ -40,8 +40,7 @@ $box-sizing-polyfill-path: "boxsizing.htc";
     width: 100%;
   }
 
-  // Zen Clear
-    // @include zen-clear();
+  // For two column layouts 
   &.two-col-1 {
     @include zen-grid-item(6, 1);
   }
@@ -51,73 +50,29 @@ $box-sizing-polyfill-path: "boxsizing.htc";
   
   // For three column layouts
   &.three-col-1 {
-    @include zen-grid-item(12, 1);
+    @include zen-grid-item(4, 1);
+    @include zen-clear();
   }
   &.three-col-2 {
-    @include zen-grid-item(12, 1);
+    @include zen-grid-item(4, 5);
   }
   &.three-col-3 {
-    @include zen-grid-item(12, 1);
-  }
-  @media only screen and (min-width: 481px) {
-    &.three-col-1 {
-      @include zen-grid-item(4, 1);
-      @include zen-clear();
-    }
-    &.three-col-2 {
-      @include zen-grid-item(4, 5);
-    }
-    &.three-col-3 {
-      @include zen-grid-item(4, 9);
-    }
+    @include zen-grid-item(4, 9);
   }
 
   // For four column layouts
   &.four-col-1 {
-    @include zen-grid-item(12, 1);
+    @include zen-grid-item(3, 1);    
+    @include zen-clear();
   }
   &.four-col-2 {
-    @include zen-grid-item(12, 1);
+    @include zen-grid-item(3, 4);
   }
   &.four-col-3 {
-    @include zen-grid-item(12, 1);
+    @include zen-grid-item(3, 7);
   }
   &.four-col-4 {
-    @include zen-grid-item(12, 1);
-  }
-  // Two up
-  @media only screen and (min-width: 481px) {
-    &.four-col-1 {
-      @include zen-grid-item(6, 1);
-    }
-    &.four-col-2 {
-      @include zen-grid-item(6, 7);
-    }
-    &.four-col-3 {
-      @include zen-grid-item(6, 1);
-    }
-    &.four-col-4 {
-      @include zen-grid-item(6, 7);
-    }
-    &.four-col-2,
-    &.four-col-4 {
-      @include zen-clear(none);
-    }
-  }
-  //Four up
-  @media only screen and (min-width: 768px) {
-    &.four-col-1 {
-      @include zen-grid-item(3, 1);
-    }
-    &.four-col-2 {
-      @include zen-grid-item(3, 4);
-    }
-    &.four-col-3 {
-      @include zen-grid-item(3, 7);
-    }
-    &.four-col-4 {
-      @include zen-grid-item(3, 10);
-    }
+    @include zen-grid-item(3, 10);
   }
 
   // Full page widths
@@ -159,7 +114,7 @@ $box-sizing-polyfill-path: "boxsizing.htc";
 body { // Typography 
   font-size: 20px;
   font-weight: 400;
-  font-family: lato;
+  font-family: lato, Helvetica, sans-serif;
   color: $color-font;
   -webkit-font-smoothing: antialiased;
   @media only screen and (max-width:1280px) {
@@ -340,7 +295,7 @@ header {
 }
 
 .big-button {
-  @include transition(all 0.6s);
+  @include transition(background-color 0.6s);
   @include border-radius(3px);
   background: #111 url(../img/noise-b.png) repeat;
   color: #fff;
@@ -350,7 +305,7 @@ header {
   display: inline-block;
   opacity: 0.94;
   &:hover {
-    @include transition(all 0.6s);
+    @include transition(background-color 0.6s);
     background-color: $color-green;
     color: #fff;
   }
@@ -376,130 +331,200 @@ header {
 
   text-transform: uppercase;
   text-align: center;
-  font-size: 0.86em;
-  position: relative;
-  width: 100%-36px;
 
-  .session {
-    display: table;
-    .text-surround {
-      display: table-cell;
-      vertical-align: middle;
+  .day {
+    float: left;
+    width: 20%;
+    border: 1px solid #888;
+    border-left: none;
+    &:first-child {
+      border-left: 1px solid #888; 
+    }
+    .day_header {
+      font-family: lato, Helvetica, sans-serif;
+      color: $color_white;
+      background-color: $color-green;
+      margin: 0;
+      border-bottom: 1px solid #888;
+      padding: 0.4em 1em;
+    }
+    .slots {
+      position: relative;
+      height: $total-hours * $timeslots-per-hour * $timeslot-height;
+      .course {
+        display: table;
+        background-color: $color-green;
+        color: $color-white;
+        position: absolute;
+        font-size: 0.8em;
+        .text-surround {
+          display: table-cell;
+          vertical-align: middle;
+        }
+        &.kb {
+          background-color: $color-kickboxing;
+          border-color: darken($color-kickboxing, 10%);
+        }
+        &.bx {
+          background-color: $color-boxing;
+          border-color: darken($color-boxing, 10%);
+        }
+        &.bjj {
+          background-color: $color-jjkids;
+          border-color: darken($color-jjkids, 10%);
+        }
+        &.e1 {
+          width: 100%;
+        }
+        &.e2 {
+          width: 50%;
+        }
+        &.t1500 {
+          top: 0;
+        }
+        &.t1800 {
+          top: 12 * $timeslot-height;
+        }
+        &.t1815 {
+          top: 13 * $timeslot-height;
+        }
+        &.t1930 {
+          top: 18 * $timeslot-height;
+        }
+        &.s4 {
+          height: $timeslot-height * 4;
+        }
+        &.s5 {
+          height: $timeslot-height * 5;
+        }
+        &.s6 {
+          height: $timeslot-height * 6;
+        }
+        &.left {
+          left: 0;
+        }
+        &.right {
+          right: 0;
+        }
+      }
     }
   }
 
-  @mixin sessionBlock($dayOfWeek, $startTime /* Start time is using decimals e.g. 15.75 = 15:45 */, $durationMinutes, $numConEvents: 1, $posOfConEvent: 1 ) { // Day of week
-    $sessionWidth: (100%/$days-in-week)/$numConEvents;
-    position: absolute;
-    width: 100%;
-    top: ($startTime - $tableStartTime) * $timeslots-per-hour * $timeslot-height + $headerHeight;
-    height: $durationMinutes/15 * $timeslot-height;
-    width: $sessionWidth;
-    left: (($dayOfWeek - 1) * (100%/$days-in-week))+(($posOfConEvent - 1)*$sessionWidth);
-    border: 1px solid transparent;
-    color: $color-white;
-  }
-  .calendar {
-    border: 1px lighten($color-grey, 20%) solid;
-    width: 100%;
-    th {
-      height: $headerHeight;
-      vertical-align: middle;
-      width: 99%/$days-in-week;
-      color: $color-white;
-      background-color: $color-grey;
-    }
-    .day-of-week {
-      border: 1px lighten($color-grey, 20%) solid;
-      height: $timeslot-height*$total-hours*$timeslots-per-hour;
-    }
-  }
 
-  #kickboxing-m1 {
-    @include sessionBlock(1, 15.00,75, 1, 1);
-    border-color: darken($color-kickboxing, 20%);
-    background-color: $color-kickboxing;
-  }
-  #jj-kids-m1 {
-    @include sessionBlock(1, 18.25,60, 2, 2);
-    border-color: darken($color-jjkids, 20%);
-    background-color: $color-jjkids;
-  }
-  #boxing-m1 {
-    @include sessionBlock(1, 18.00,90, 2, 1);
-    border-color: darken($color-boxing, 20%);
-    background-color: $color-boxing;
-  }
-  #boxing-m2 {
-    @include sessionBlock(1, 19.50,90, 2, 2);
-    border-color: darken($color-boxing, 20%);
-    background-color: $color-boxing;
-  }
-  #jj-m1 {
-    @include sessionBlock(1, 20.50,90, 2, 1);
-    border-color: darken($color-jj, 20%);
-    background-color: $color-jj;
-  }
-  #boxing-juniors-t1 {
-    @include sessionBlock(2, 17.50,75, 1, 1);
-    border-color: darken($color-juniorboxing, 20%);
-    background-color: $color-juniorboxing;
-  }
-  #judo-t1 {
-    @include sessionBlock(2, 19.50,90, 1, 1);
-    border-color: darken($color-judo, 20%);
-    background-color: $color-judo;
-  }
-  #kickboxing-w1 {
-    @include sessionBlock(3, 15.00,75, 1, 1);
-    border-color: darken($color-kickboxing, 20%);
-    background-color: $color-kickboxing;
-  }
-  #jj-kids-w1 {
-    @include sessionBlock(3, 18.25,60, 2, 2);
-    border-color: darken($color-jjkids, 20%);
-    background-color: $color-jjkids;
-  }
-  #boxing-w1 {
-    @include sessionBlock(3, 18.00,90, 2, 1);
-    border-color: darken($color-boxing, 20%);
-    background-color: $color-boxing;
-  }
-  #boxing-w2 {
-    @include sessionBlock(3, 19.50,90, 2, 1);
-    border-color: darken($color-boxing, 20%);
-    background-color: $color-boxing;
-  }
-  #jj-w1 {
-    @include sessionBlock(3, 20.50,90, 2, 2);
-    border-color: darken($color-jj, 20%);
-    background-color: $color-jj;
-  }
-  #boxing-juniors-r1 {
-    @include sessionBlock(4, 17.50,75, 1, 1);
-    border-color: darken($color-juniorboxing, 20%);
-    background-color: $color-juniorboxing;
-  }
-  #judo-r1 {
-    @include sessionBlock(4, 19.50,90, 1, 1);
-    border-color: darken($color-judo, 20%);
-    background-color: $color-judo;
-  }
-  #kickboxing-f1 {
-    @include sessionBlock(5, 15.00,75, 1, 1);
-    border-color: darken($color-kickboxing, 20%);
-    background-color: $color-kickboxing;
-  }
-  #boxing-f1 {
-    @include sessionBlock(5, 19.50,90, 2, 1);
-    border-color: darken($color-boxing, 20%);
-    background-color: $color-boxing;
-  }
-  #jj-free-f1 {
-    @include sessionBlock(5, 19.50,90, 2, 2);
-    border-color: darken($color-jj, 20%);
-    background-color: $color-jj;
-  }
+
+
+  // @mixin sessionBlock($dayOfWeek, $startTime /* Start time is using decimals e.g. 15.75 = 15:45 */, $durationMinutes, $numConEvents: 1, $posOfConEvent: 1 ) { // Day of week
+  //   $sessionWidth: 100% / $days-in-week / $numConEvents;
+  //   position: absolute;
+  //   top: ($startTime - $tableStartTime) * $timeslots-per-hour * $timeslot-height + $headerHeight;
+  //   height: $durationMinutes/15 * $timeslot-height;
+  //   width: $sessionWidth;
+  //   left: (($dayOfWeek - 1) * (100%/$days-in-week))+(($posOfConEvent - 1)*$sessionWidth);
+  //   border: 1px solid transparent;
+  //   color: $color-white;
+  // }
+
+  // .calendar {
+  //   border: 1px lighten($color-grey, 20%) solid;
+  //   width: 100%;
+  //   th {
+  //     height: $headerHeight;
+  //     vertical-align: middle;
+  //     width: 99%/$days-in-week;
+  //     color: $color-white;
+  //     background-color: $color-grey;
+  //   }
+  //   .day-of-week {
+  //     border: 1px lighten($color-grey, 20%) solid;
+  //     height: $timeslot-height*$total-hours*$timeslots-per-hour;
+  //   }
+  // }
+
+  // #kickboxing-m1 {
+  //   @include sessionBlock(1, 15.00,75, 1, 1);
+  //   border-color: darken($color-kickboxing, 20%);
+  //   background-color: $color-kickboxing;
+  // }
+  // #jj-kids-m1 {
+  //   @include sessionBlock(1, 18.25,60, 2, 2);
+  //   border-color: darken($color-jjkids, 20%);
+  //   background-color: $color-jjkids;
+  // }
+  // #boxing-m1 {
+  //   @include sessionBlock(1, 18.00,90, 2, 1);
+  //   border-color: darken($color-boxing, 20%);
+  //   background-color: $color-boxing;
+  // }
+  // #boxing-m2 {
+  //   @include sessionBlock(1, 19.50,90, 2, 2);
+  //   border-color: darken($color-boxing, 20%);
+  //   background-color: $color-boxing;
+  // }
+  // #jj-m1 {
+  //   @include sessionBlock(1, 20.50,90, 2, 1);
+  //   border-color: darken($color-jj, 20%);
+  //   background-color: $color-jj;
+  // }
+  // #boxing-juniors-t1 {
+  //   @include sessionBlock(2, 17.50,75, 1, 1);
+  //   border-color: darken($color-juniorboxing, 20%);
+  //   background-color: $color-juniorboxing;
+  // }
+  // #judo-t1 {
+  //   @include sessionBlock(2, 19.50,90, 1, 1);
+  //   border-color: darken($color-judo, 20%);
+  //   background-color: $color-judo;
+  // }
+  // #kickboxing-w1 {
+  //   @include sessionBlock(3, 15.00,75, 1, 1);
+  //   border-color: darken($color-kickboxing, 20%);
+  //   background-color: $color-kickboxing;
+  // }
+  // #jj-kids-w1 {
+  //   @include sessionBlock(3, 18.25,60, 2, 2);
+  //   border-color: darken($color-jjkids, 20%);
+  //   background-color: $color-jjkids;
+  // }
+  // #boxing-w1 {
+  //   @include sessionBlock(3, 18.00,90, 2, 1);
+  //   border-color: darken($color-boxing, 20%);
+  //   background-color: $color-boxing;
+  // }
+  // #boxing-w2 {
+  //   @include sessionBlock(3, 19.50,90, 2, 1);
+  //   border-color: darken($color-boxing, 20%);
+  //   background-color: $color-boxing;
+  // }
+  // #jj-w1 {
+  //   @include sessionBlock(3, 20.50,90, 2, 2);
+  //   border-color: darken($color-jj, 20%);
+  //   background-color: $color-jj;
+  // }
+  // #boxing-juniors-r1 {
+  //   @include sessionBlock(4, 17.50,75, 1, 1);
+  //   border-color: darken($color-juniorboxing, 20%);
+  //   background-color: $color-juniorboxing;
+  // }
+  // #judo-r1 {
+  //   @include sessionBlock(4, 19.50,90, 1, 1);
+  //   border-color: darken($color-judo, 20%);
+  //   background-color: $color-judo;
+  // }
+  // #kickboxing-f1 {
+  //   @include sessionBlock(5, 15.00,75, 1, 1);
+  //   border-color: darken($color-kickboxing, 20%);
+  //   background-color: $color-kickboxing;
+  // }
+  // #boxing-f1 {
+  //   @include sessionBlock(5, 19.50,90, 2, 1);
+  //   border-color: darken($color-boxing, 20%);
+  //   background-color: $color-boxing;
+  // }
+  // #jj-free-f1 {
+  //   @include sessionBlock(5, 19.50,90, 2, 2);
+  //   border-color: darken($color-jj, 20%);
+  //   background-color: $color-jj;
+  // }
 }
 
 
