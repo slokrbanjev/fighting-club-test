@@ -1964,70 +1964,68 @@ header .main-menu li a {
 
 /* line 508, ../sass/main.scss */
 footer {
-  background-image: url(../img/Map.png);
+  background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-top-color: #696969;
   border-top-style: solid;
   border-top-width: 1px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: block;
   color: #fff;
 }
-/* line 518, ../sass/main.scss */
+/* line 519, ../sass/main.scss */
 footer .overlay {
-  -webkit-transition-duration: 0.30000001192092896s;
-  -webkit-transition-property: opacity;
-  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-color: rgba(0, 0, 0, 0.74609);
-  background-image: none;
-  background-origin: padding-box;
+  position: relative;
+  background: rgba(0, 0, 0, 0.68) url(../img/noise-f.png) repeat;
   display: block;
 }
-/* line 531, ../sass/main.scss */
+/* line 526, ../sass/main.scss */
 footer .contact-info {
   clear: left;
 }
-/* line 533, ../sass/main.scss */
+/* line 528, ../sass/main.scss */
 footer .contact-info h2, footer .contact-info h3 {
   color: #fff;
 }
-/* line 536, ../sass/main.scss */
+/* line 531, ../sass/main.scss */
 footer .contact-info h3 {
   margin: 0.6em 0;
 }
-/* line 539, ../sass/main.scss */
+/* line 534, ../sass/main.scss */
 footer .contact-info a {
   color: #aabf46;
 }
-/* line 542, ../sass/main.scss */
+/* line 537, ../sass/main.scss */
 footer .contact-info a:hover {
   color: #696969;
 }
-/* line 545, ../sass/main.scss */
+/* line 540, ../sass/main.scss */
 footer .contact-info img {
   width: 25%;
 }
-/* line 549, ../sass/main.scss */
+/* line 544, ../sass/main.scss */
 footer .contact-info .title-descriptions {
   max-width: 80%;
 }
-/* line 554, ../sass/main.scss */
+/* line 549, ../sass/main.scss */
 footer .contact-info .contact-email {
   font-size: 2.2em;
   color: #aabf46;
 }
-/* line 560, ../sass/main.scss */
+/* line 555, ../sass/main.scss */
 footer .contact-info .contact-phone {
   font-size: 1.4em;
   color: #aabf46;
 }
-/* line 566, ../sass/main.scss */
+/* line 561, ../sass/main.scss */
 footer .contact-info .contact-address {
   font-weight: 200;
 }
-/* line 571, ../sass/main.scss */
+/* line 566, ../sass/main.scss */
 footer .contact-info .partner-link {
   display: block;
   color: white;

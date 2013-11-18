@@ -506,24 +506,19 @@ header {
 // Styling for our footer.
 
 footer {
-  background-image: url(../img/Map.png);
+  background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-top-color: #696969;
   border-top-style: solid;
   border-top-width: 1px;
+  @include background-size(cover);
   display: block;
   color: #fff;
 
   .overlay {
-    -webkit-transition-duration: 0.30000001192092896s;
-    -webkit-transition-property: opacity;
-    -webkit-transition-timing-function: cubic-bezier(0, 0, 0.58, 1);
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: rgba(0, 0, 0, 0.746094);
-    background-image: none;
-    background-origin: padding-box;
+    position: relative;
+    background: rgba(0, 0, 0, 0.68) url(../img/noise-f.png) repeat;
     display: block;
   }
 
