@@ -37,7 +37,7 @@ $(document).ready(function () {
     easing: 'linear',
     speed: 2000,
     pause: 6000,
-    kenZoom: 260,
+    kenZoom: 120,
     autoHover: false
   });
 });
