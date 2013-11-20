@@ -5,10 +5,11 @@ $(document).ready(function () {
     meanScreenWidth: 600
   });
   $('.main-menu a, .smooth-link, .mean-nav a').click(function (e) {
-  	e.preventDefault();
-    $('body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
+    var target = $(this).attr('href');
+    $('body, html').animate({
+      scrollTop: $(target).offset().top
     }, 600);
+    return false;
   });
 
 
