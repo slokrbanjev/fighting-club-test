@@ -1,10 +1,10 @@
 Options +FollowSymlinks
 RewriteEngine on
 
-# RewriteRule ^$ /en/ [L,R]
 RewriteCond %{REQUEST_URI} ^/$
 RewriteCond %{HTTP:Accept-Language} ^(de|it|en) [NC]
 RewriteRule .* /%1 [L,R]
+RewriteRule ^$ /de/ [L,R]
 
 # Requires mod_expires to be enabled.
 <IfModule mod_expires.c>
