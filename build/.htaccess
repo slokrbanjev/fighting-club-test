@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+# RewriteRule ^$ /en/ [L,R]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteCond %{HTTP:Accept-Language} ^(de|it|en) [NC]
+RewriteRule .* /%1 [L,R]

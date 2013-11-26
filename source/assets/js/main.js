@@ -12,6 +12,7 @@ $(document).ready(function () {
     return false;
   });
 
+
   if ($('.glove').css('transitionDuration') !== '0s') {
     $(document).on('scroll', function () {
       if ($(this).scrollTop() > 100) {

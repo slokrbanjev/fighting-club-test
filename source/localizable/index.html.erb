@@ -5,9 +5,9 @@ title: Fighting Club Meran/o
 <div class="topbar">
   <div class="container">
     <ul class="language-menu">
-      <li><a href="#" class="en active">English</a></li>
-      <li><a href="#" class="de">Deutsch</a></li>
-      <li><a href="#" class="it">Italiano</a></li>
+      <li><%= nav_link "Deutsch", "/de/" %></li>
+      <li><%= nav_link "Italiano", "/it/" %></li>
+      <li><%= nav_link "English", "/en/" %></li>
     </ul>
   </div>
 </div>
@@ -28,10 +28,10 @@ title: Fighting Club Meran/o
     </a>
   </header>
   <section class="content_wrapper" id="intro">
-    <h1 class= "main-slogan">Once a warrior<br/>always a warrior  <%= t(:hello) %></h1>
+    <h1 class= "main-slogan">Once a warrior<br/>always a warrior </h1>
     <div class="by-line">
       <p>
-        Intense exercise in a diverse and friendly environment.
+        <%= t(:tagline) %>
       </p>
       <img class="glove glove-right" src="../assets/img/boxer-glove-right.png" />
       <img class="glove glove-left" src="../assets/img/boxer-glove.png" />
@@ -168,7 +168,7 @@ title: Fighting Club Meran/o
           <div class="day">
             <h4 class="day_header">Monday <span class="day-toggle on-mobile">⬇︎</span></h4>
             <div class="slots">
-              <div class="course kick-boxing t1500 s5 e1"><div class="text-surround">Kickboxing<br>15.00 – 16.15</div></div>
+              <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:kickboxing) %><br>15.00 – 16.15</div></div>
               <div class="course boxing t1800 s6 e2 right"><div class="text-surround">Boxing<br>18.00 – 19.30</div></div>
               <div class="course jiu-jitsu-kids t1815 s4 e2 left"><div class="text-surround">Brasilian Jiu Jitsu „Kids“<br>18.15 – 19.15</div></div>
               <div class="course boxing t1930 s6 e2 right"><div class="text-surround">Boxing<br>19.30 – 21.00</div></div>
@@ -185,7 +185,7 @@ title: Fighting Club Meran/o
           <div class="day">
             <h4 class="day_header">Wednesday <span class="day-toggle on-mobile">⬇︎</span></h4>
             <div class="slots">
-            <div class="course kick-boxing t1500 s5 e1"><div class="text-surround">Kickboxing<br>15.00 – 16.15</div></div>
+            <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:kickboxing) %><br>15.00 – 16.15</div></div>
               <div class="course boxing t1800 s6 e2 right"><div class="text-surround">Boxing<br>18.00 – 19.30</div></div>
               <div class="course jiu-jitsu-kids t1815 s4 e2 left"><div class="text-surround">Brasilian Jiu Jitsu „Kids“<br>18.15 – 19.15</div></div>
               <div class="course boxing t1930 s6 e2 right"><div class="text-surround">Boxing<br>19.30 – 21.00</div></div>
@@ -202,7 +202,7 @@ title: Fighting Club Meran/o
           <div class="day">
             <h4 class="day_header">Friday <span class="day-toggle on-mobile">⬇︎</span></h4>
             <div class="slots">
-              <div class="course kick-boxing t1500 s5 e1"><div class="text-surround">Kickboxing<br>15.00 – 16.15</div></div>
+              <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:kickboxing) %><br>15.00 – 16.15</div></div>
               <div class="course jiu-jitsu t1930 s6 e2 left"><div class="text-surround">Brasilian Jiu Jitsu „Free“<br>19.30 – 21.00</div></div>
               <div class="course boxing t1930 s6 e2 right"><div class="text-surround">Boxing<br>19.30 – 21.00</div></div>
             </div>
@@ -220,15 +220,12 @@ title: Fighting Club Meran/o
     </div>
     <div class="zen-box full">
       <ul class="gallery" style="width: 100%;">
-        <li><img src="../assets/img/slideshow/fight-club-slider-4.jpg" alt=""></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-8.jpg"></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-5.jpg"></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-3.jpg"></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-1.jpg"></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-6.jpg"></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-2.jpg"></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-9.jpg"></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-7.jpg"></li>
+        <li><img src="../assets/img/slideshow/fight-club-slider-8.jpg" alt=""></li>
+        <li><img src="../assets/img/slideshow/fight-club-slider-1.jpg" alt=""></li>
+        <li><img src="../assets/img/slideshow/fight-club-slider-6.jpg" alt=""></li>
+        <li><img src="../assets/img/slideshow/fight-club-slider-9.jpg" alt=""></li>
+        <li><img src="../assets/img/slideshow/fight-club-slider-2.jpg" alt=""></li>
+        <li><img src="../assets/img/slideshow/fight-club-slider-7.jpg" alt=""></li>
       </ul>
     </div>
   </section>     
