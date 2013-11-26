@@ -1,5 +1,7 @@
-$(document).ready(function () {
+//= require "vendor/jquery.meanmenu.min"
+//= require "vendor/slippry.min"
 
+$(document).ready(function () {
   $('.main-menu').meanmenu({
     // onePage: true,
     meanScreenWidth: 600
@@ -11,8 +13,6 @@ $(document).ready(function () {
     }, 600);
     return false;
   });
-
-
   if ($('.glove').css('transitionDuration') !== '0s') {
     $(document).on('scroll', function () {
       if ($(this).scrollTop() > 100) {
@@ -31,8 +31,7 @@ $(document).ready(function () {
         $('.day-toggle', $(this).closest('.day')).text('⬇︎');
       }
     });
-  }  
-
+  }
   $('.gallery').slippry({
     transition: 'kenburns',
     easing: 'linear',
