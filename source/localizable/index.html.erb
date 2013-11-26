@@ -15,11 +15,11 @@ title: Fighting Club Meran/o
   <header>
     <nav class="main-menu">
       <ul>
-        <li><a class="anchor-link" href="#classes">Classes</a></li>
-        <li><a class="anchor-link" href="#trainers">Trainers</a></li>
-        <li><a class="anchor-link" href="#schedule">Schedule</a></li>
-        <li><a class="anchor-link" href="#join">Join</a></li>
-        <li><a class="anchor-link" href="#contact">Contact</a></li>
+        <li><a class="anchor-link" href="#classes"><%= t(:section_classes) %></a></li>
+        <li><a class="anchor-link" href="#trainers"><%= t(:section_trainers) %></a></li>
+        <li><a class="anchor-link" href="#schedule"><%= t(:section_schedule) %></a></li>
+        <li><a class="anchor-link" href="#join"><%= t(:section_join) %></a></li>
+        <li><a class="anchor-link" href="#contact"><%= t(:section_contact) %></a></li>
       </ul>
     </nav>
     <h1 class="title visuallyhidden">Fighting Club Meran/o</h1>
@@ -39,127 +39,127 @@ title: Fighting Club Meran/o
   </section>
   <section class="content_wrapper" id="classes">
     <div class="zen-box section-header">
-      <h2>Classes.</h2>
+      <h2><%= t(:section_classes) %></h2>
       <p class="title-descriptions"> 
-        Fighting club offers four different course disciplines: Boxing, Kickboxing, Judo and Brazilian Jiu Jitsu. Members are entitled to participate in any classes of their choosing, even from multiple disciplines.
+        <%= t(:desc_classes) %>
       </p>
     </div>  
     <div class="zen-box four-col-1">
       <img src="../assets/img/boxing.png" />
-      <h4 class="sub-title">Boxing.</h4>
+      <h4 class="sub-title"><%= t(:subsection_boxing) %></h4>
       <p>
-        Boxing sessions last 90 minutes and work through a variety of excersizes including technique training, sparring, circuit training, strength excersizes and stretching. Sessions can be rough, but we always enforce safe practices and fairplay. 
+        <%= t(:subdesc_boxing) %>
       </p>
-      <a href="#contact" class="big-button on-mobile" target="_blank">Sign up</a>  
+      <a href="#contact" class="big-button on-mobile" target="_blank"><%= t(:button_signup) %></a>  
     </div>
      <div class="zen-box four-col-2">
       <img src="../assets/img/kickboxing.png">
-      <h4 class="sub-title">Kickboxing.</h4>
+      <h4 class="sub-title"><%= t(:subsection_kickboxing) %></h4>
       <p>
-        Just like our boxing classes, but with kicking! The 90 minute class incorporates conditioning excersizes, technique training and drilling, sparring, circuit training, strength excersizes and stretching.
+        <%= t(:subdesc_kickboxing) %>
       </p>
-      <a href="#contact" class="big-button on-mobile" target="_blank">Sign up</a>
+      <a href="#contact" class="big-button on-mobile" target="_blank"><%= t(:button_signup) %></a>
     </div>
     <div class="button-wrapper sign-up only-tablet">
-      <div class="zen-box four-col-3"><a href="#contact" class="big-button" target="_blank">Sign up</a></div>
-      <div class="zen-box four-col-4"><a href="#contact" class="big-button" target="_blank">Sign up</a></div>
+      <div class="zen-box four-col-3"><a href="#contact" class="big-button" target="_blank"><%= t(:button_signup) %></a></div>
+      <div class="zen-box four-col-4"><a href="#contact" class="big-button" target="_blank"><%= t(:button_signup) %></a></div>
     </div>
     <div class="zen-box four-col-3">
       <img src="../assets/img/judo.png">
-      <h4 class="sub-title">Judo.</h4>
+      <h4 class="sub-title"><%= t(:subsection_judo) %></h4>
       <p>
-        Judo is best known for its throwing techniques, but also involves grappling on the ground using specialized pins, control holds, arm locks and chokes. Our 90 minute class includes conditioning and strength excersizes, technique training, sparring, and stretching.
+        <%= t(:subdesc_judo) %>
       </p>
-      <a href="#contact" class="big-button on-mobile" target="_blank">Sign up</a>
+      <a href="#contact" class="big-button on-mobile" target="_blank"><%= t(:button_signup) %></a>
     </div>
     <div class="zen-box four-col-4">
       <img src="../assets/img/juijitsu.png">
-      <h4 class="sub-title">Brazilian Jujitsu.</h4>
+      <h4 class="sub-title"><%= t(:subsection_brazilianjiujitsu) %></h4>
       <p>
-        Brazilian jiu-jitsu is a grappling martial art and self-defense system based on leverage techniques, joint-locks and choke holds. The 90 minute classes include conditioning excersizes, technique training, live sparring, strength excersizes and stretching.
+        <%= t(:subdesc_brazilianjiujitsu) %>
       </p>
-      <a href="#contact" class="big-button on-mobile" target="_blank">Sign up</a>
+      <a href="#contact" class="big-button on-mobile" target="_blank"><%= t(:button_signup) %></a>
     </div>
     <div class="button-wrapper sign-up no-mobile no-tablet">
-      <div class="zen-box four-col-1"><a href="#contact" class="big-button" target="_blank">Sign up</a></div>
-      <div class="zen-box four-col-2"><a href="#contact" class="big-button" target="_blank">Sign up</a></div>
-      <div class="zen-box four-col-3"><a href="#contact" class="big-button" target="_blank">Sign up</a></div>
-      <div class="zen-box four-col-4"><a href="#contact" class="big-button" target="_blank">Sign up</a></div>
+      <div class="zen-box four-col-1"><a href="#contact" class="big-button" target="_blank"><%= t(:button_signup) %></a></div>
+      <div class="zen-box four-col-2"><a href="#contact" class="big-button" target="_blank"><%= t(:button_signup) %></a></div>
+      <div class="zen-box four-col-3"><a href="#contact" class="big-button" target="_blank"><%= t(:button_signup) %></a></div>
+      <div class="zen-box four-col-4"><a href="#contact" class="big-button" target="_blank"><%= t(:button_signup) %></a></div>
     </div>
     <div class="button-wrapper sign-up only-tablet">
-      <div class="zen-box four-col-3"><a href="#contact" class="big-button" target="_blank">Sign up</a></div>
-      <div class="zen-box four-col-4"><a href="#contact" class="big-button" target="_blank">Sign up</a></div>
+      <div class="zen-box four-col-3"><a href="#contact" class="big-button" target="_blank"><%= t(:button_signup) %></a></div>
+      <div class="zen-box four-col-4"><a href="#contact" class="big-button" target="_blank"><%= t(:button_signup) %></a></div>
     </div>
   </section>
   <section class="content_wrapper" id="trainers">
     <div class="zen-box section-header">
-      <h2>Trainers.</h2>
+      <h2><%= t(:section_trainers) %></h2>
       <p class="title-descriptions">
-        Our trainers are experts in their respective disciplines. They basically kick ass.
+        <%= t(:desc_trainers) %>
       </p>
     </div> 
     <div class="zen-box four-col-1">
       <img src="../assets/img/trainers/trainer-1.jpg">
       <h4 class="sub-title">Hartmann Stragenegg</h4>
       <p>
-        Hartmann has the technical leadership of the Fighting Club. The former European champion in Kickboxing, Austrian champion and Italian runner-up in Boxing literally built the Fighting Club by himself. Hartmann enjoys any kind of athletic activity, including Rafting, Cycling and Swimming.
+        <%= t(:subdesc_trainer1) %>
       </p>
     </div>
     <div class="zen-box four-col-2">
       <img src="../assets/img/trainers/trainer-5.jpg">
       <h4 class="sub-title">Domenico Rucco</h4>
       <p>
-        Domenico, also known as Mimmo, is the President of the association. He leads the Boxing sessions later in the evening and is known for quite intense warm-up exercises. Mimmo is a passionate track and field athlete... Maecenas sed diam eget risus varius blandit sit amet non magna.
+        <%= t(:subdesc_trainer2) %>
       </p>
     </div>  
        <div class="zen-box four-col-3">
       <img src="../assets/img/trainers/trainer-5.jpg">
       <h4 class="sub-title">Roberto Salgaro</h4>
       <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna.
+        <%= t(:subdesc_trainer3) %>
       </p>
     </div> 
     <div class="zen-box four-col-4">
       <img src="../assets/img/trainers/trainer-2.jpg">
       <h4 class="sub-title">Patrick Benetti</h4>
       <p>
-        Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh ultricies vehicula ut id elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        <%= t(:subdesc_trainer4) %>
       </p>
     </div>
     <div class="zen-box four-col-1">
       <img src="../assets/img/trainers/trainer-4.jpg">
       <h4 class="sub-title">Daniel Vesco</h4>
       <p>
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in.
+        <%= t(:subdesc_trainer5) %>
       </p>
     </div>
     <div class="zen-box four-col-2">
       <img src="../assets/img/trainers/trainer-3.jpg">
       <h4 class="sub-title">Michael Zuber</h4>
       <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna.
+        <%= t(:subdesc_trainer6) %>
       </p>
     </div>
     <div class="zen-box four-col-3">
       <img src="../assets/img/trainers/trainer-6.jpg">
       <h4 class="sub-title">Heinrich Tomasi</h4>
       <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna.
+        <%= t(:subdesc_trainer7) %>
       </p>
     </div>
      <div class="zen-box four-col-4">
       <img src="../assets/img/trainers/trainer-5.jpg">
       <h4 class="sub-title">Karl Pfeil</h4>
       <p>
-        Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna.
+        <%= t(:subdesc_trainer8) %>
       </p>
     </div>
   </section>
   <section class="content_wrapper" id="schedule">
     <div class="zen-box section-header">
-      <h2>Schedule.</h2>
+      <h2><%= t(:section_schedule) %></h2>
       <p class="title-descriptions">
-        Fighting Club Meran/o is closed between the hours of 3pm until 9pm for private training only.
+        <%= t(:desc_schedule) %>
       </p>
     </div>
     <section class="zen-box timetable">
