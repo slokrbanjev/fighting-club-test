@@ -26,4 +26,23 @@ en:
   subdesc_trainer7:
   subdesc_trainer8:
   desc_schedule: "Fighting Club Meran/o is closed between the hours of 3pm until 9pm for private training only."
+  schedule_monday: "Monday"
+  schedule_tuesday: "Tuesday"
+  schedule_wednesday: "Wednesday"
+  schedule_thursday: "Thursday"
+  schedule_friday: "Friday"
+  schedule_boxing: "Boxing"
+  schedule_boxing_juniors: "Boxing 'Juniors'"
+  schedule_kickboxing: "Kickboxing"
+  schedule_judo: "Judo"
+  schedule_bjj: "Brazilian Jiu Jitsu"
+  schedule_bjj_kids: "Brazilian Jiu Jitsu 'Kids'"
+  schedule_bjj_free: "Brazilian Jiu Jitsu 'Free'"
+  section_pictures: "Pictures"
+  desc_pictures: "Have a look through our gallery, where you can catch a glimps of our new facilities."
+  desc_join: "Joining the fighting club is easy. Simply follow the steps below."
+  subsection_join1: "1. Get in touch"
+  subsection_join2: "2. Medical"
+  subsection_join3: "3. Free trial"
+  subsection_join4: "4. Membership"
   
