@@ -1,11 +1,11 @@
 en:
   tagline: "Intense exercise in a diverse and friendly environment."  
-  kickboxing: "Kickboxing"
   section_classes: "Classes"
   section_trainers: "Trainers"
   section_schedule: "Schedule"
   section_join: "Join"
   section_contact: "Contact"
+
   desc_classes: "Fighting Club offers four different course disciplines: Boxing, Kickboxing, Judo and Brazilian Jiu Jitsu. Members are entitled to participate in any classes of their choosing, even from multiple disciplines after consultation with the relevant instructor."
   subsection_boxing: "Boxing"
   subsection_kickboxing: "Kickboxing"
@@ -16,6 +16,7 @@ en:
   subdesc_judo: "Judo is best known for its throwing techniques, but also involves grappling on the ground using specialized pins, control holds, arm locks and chokes. Our 90 minute class includes conditioning and strength excersizes, technique training, sparring, and stretching."
   subdesc_brazilianjiujitsu: "Brazilian jiu-jitsu is a grappling martial art and self-defense system based on leverage techniques, joint-locks and choke holds. The 90 minute classes include conditioning excersizes, technique training, live sparring, strength excersizes and stretching."
   button_signup: "Sign up"
+
   desc_trainers: "Our trainers are experts in their respective disciplines. They basically kick ass."
   subdesc_trainer1: "Hartmann has the technical leadership of the Fighting Club. The former European champion in Kickboxing, Austrian champion and Italian runner-up in Boxing literally built the Fighting Club by himself. Hartmann enjoys any kind of athletic activity, including Rafting, Cycling and Swimming."
   subdesc_trainer2: "Domenico, also known as Mimmo, is the President of the association. He leads the Boxing sessions later in the evening and is known for quite intense warm-up exercises. Mimmo is a passionate track and field athlete... Maecenas sed diam eget risus varius blandit sit amet non magna."
@@ -25,7 +26,8 @@ en:
   subdesc_trainer6:
   subdesc_trainer7:
   subdesc_trainer8:
-  desc_schedule: "Fighting Club Meran/o is closed between the hours of 3pm until 9pm for private training only."
+
+  desc_schedule: "This is our Training Schedule for the Winter Season 2013/2014. It's valid till March 2014."
   schedule_monday: "Monday"
   schedule_tuesday: "Tuesday"
   schedule_wednesday: "Wednesday"
@@ -38,11 +40,21 @@ en:
   schedule_bjj: "Brazilian Jiu Jitsu"
   schedule_bjj_kids: "Brazilian Jiu Jitsu 'Kids'"
   schedule_bjj_free: "Brazilian Jiu Jitsu 'Free'"
+
   section_pictures: "Pictures"
   desc_pictures: "Have a look through our gallery, where you can catch a glimps of our new facilities."
+
   desc_join: "Joining the fighting club is easy. Simply follow the steps below."
   subsection_join1: "1. Get in touch"
   subsection_join2: "2. Medical"
   subsection_join3: "3. Free trial"
   subsection_join4: "4. Membership"
-  
+  subdesc_join1: "Contact the <a href="#trainers" class="smooth-link">trainer</a> who leads the course you are interested in and fix a trial appointment."
+  subdesc_join2: "Get a medical certificate from your doctor and bring it with you to the free trial appointment."
+  subdesc_join3: "Enjoy a free session compliments of us. You only need to bring your medical form, light athletic attire and indoor sports shoes."
+  subdesc_join4: "If you enjoyed the trial, sign up for a membership. The membership fee of EUR 50 is to be paid at the beginning of each month."
+
+  desc_contact: "Please get in touch with us for any additional information about Fighting Club Meran/o or about our services."
+  desc_contactaddress: "Fighting Club Merano<br> Via Otto Huber (opposite Carolinum)<br>  39012 Merano (BZ)<br> Italy"
+  subsection_partners: "Partners"
+  subdesc_partners: "The partner organizations who help to make our gym awesome:"

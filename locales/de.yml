@@ -1,2 +1,60 @@
 de:
-  hello: "Hola"
+  tagline: "Intensives Training in einer freundlichen, vielfältigen Umgebung."  
+  section_classes: "Kurse"
+  section_trainers: "Trainer"
+  section_schedule: "Trainingsplan"
+  section_join: "Beitreten"
+  section_contact: "Kontakt"
+
+  desc_classes: "Der Fighting Club bietet Kurse in vier Disziplinen an: Boxen, Kickboxen, Judo und Brazilian Jiu Jitsu. Mitglieder können nach Absprache mit den jeweiligen Trainern an allen Kursen teilnehmen."
+  subsection_boxing: "Boxen"
+  subsection_kickboxing: "Kickboxen"
+  subsection_judo: "Judo"
+  subsection_brazilianjiujitsu: "Brazilian Jiu Jitsu"
+  subdesc_boxing: "Boxing sessions last 90 minutes and work through a variety of excersizes including technique training, sparring, circuit training, strength excersizes and stretching. Sessions can be rough, but we always enforce safe practices and fairplay."
+  subdesc_kickboxing: "Just like our boxing classes, but with kicking! The 75 minute class incorporates conditioning excersizes, technique training and drilling, sparring, circuit training, strength excersizes and stretching."
+  subdesc_judo: "Judo is best known for its throwing techniques, but also involves grappling on the ground using specialized pins, control holds, arm locks and chokes. Our 90 minute class includes conditioning and strength excersizes, technique training, sparring, and stretching."
+  subdesc_brazilianjiujitsu: "Brazilian jiu-jitsu is a grappling martial art and self-defense system based on leverage techniques, joint-locks and choke holds. The 90 minute classes include conditioning excersizes, technique training, live sparring, strength excersizes and stretching."
+  button_signup: "Anmelden"
+
+  desc_trainers: "Unsere Trainer sind Meister in ihren Disziplinen."
+  subdesc_trainer1: "Hartmann ist der technische Leiter des Fighting Clubs. Der frühere Europameister im Kickboxen, Österreichmeister und Vize-Italienmeister im Boxen baute den Club (auch im wörtlichen Sinne) auf. Hartmann begeistert sich für jegliche sportliche Aktivität, unter Anderem Rafting, Radfahren und Schwimmen."
+  subdesc_trainer2: "Domenico, also known as Mimmo, is the President of the association. He leads the Boxing sessions later in the evening and is known for quite intense warm-up exercises. Mimmo is a passionate track and field athlete... Maecenas sed diam eget risus varius blandit sit amet non magna."
+  subdesc_trainer3:
+  subdesc_trainer4:
+  subdesc_trainer5:
+  subdesc_trainer6:
+  subdesc_trainer7:
+  subdesc_trainer8:
+
+  desc_schedule: "Das ist unser Trainingsplan für die Wintersaison 2013-2014. Er ist gültig bis März 2014."
+  schedule_monday: "Montag"
+  schedule_tuesday: "Dienstag"
+  schedule_wednesday: "Mittwoch"
+  schedule_thursday: "Donnerstag"
+  schedule_friday: "Freitag"
+  schedule_boxing: "Boxen"
+  schedule_boxing_juniors: "Boxen 'Junioren'"
+  schedule_kickboxing: "Kickboxen"
+  schedule_judo: "Judo"
+  schedule_bjj: "Brazilian Jiu Jitsu"
+  schedule_bjj_kids: "Brazilian Jiu Jitsu 'Kids'"
+  schedule_bjj_free: "Brazilian Jiu Jitsu 'Free'"
+
+  section_pictures: "Bilder"
+  desc_pictures: "Schau dir unsere Bildergalerie an. Hier siehst du unsere neue Trainingshalle und Aufnahmen von verschiedenen Kursen."
+
+  desc_join: "Beitreten ist einfach. Folge den unten aufgeführten Schritten und du bist dabei!"
+  subsection_join1: "1. Meld dich"
+  subsection_join2: "2. Ärztliches Zeugnis"
+  subsection_join3: "3. Probetraining"
+  subsection_join4: "4. Mitgliedschaft"
+  subdesc_join1: "Contact the <a href="#trainers" class="smooth-link">trainer</a> who leads the course you are interested in and fix a trial appointment."
+  subdesc_join2: "Get a medical certificate from your doctor and bring it with you to the free trial appointment."
+  subdesc_join3: "Enjoy a free session compliments of us. You only need to bring your medical form, light athletic attire and indoor sports shoes."
+  subdesc_join4: "If you enjoyed the trial, sign up for a membership. The membership fee of EUR 50 is to be paid at the beginning of each month."
+
+  desc_contact: "Please get in touch with us for any additional information about Fighting Club Meran/o or about our services."
+  desc_contactaddress: "Fighting Club Meran<br> Otto Huber Straße (gegenüber Carolinum)<br>  39012 Meran (BZ)<br> Italien"
+  subsection_partners: "Partner"
+  subdesc_partners: "Diese Organisationen unterstützen uns in unserer Tätigkeit:"
