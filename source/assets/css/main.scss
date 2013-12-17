@@ -631,6 +631,26 @@ footer {
       color: $color-green;
     }
 
+    // Facebook link styling.
+    .contact-fb {
+      margin: 0 0 0.8em;
+      display: block;
+      img {
+        @include transition(all 0.3s);
+        width: 1.8em;
+        height: 1.8em;
+        vertical-align: middle;
+        margin: -0.2em 0.4em 0 0;
+      }
+      &:hover {
+        img {
+          @include transition(all 0.3s);
+          opacity: .4;
+
+        }
+      }
+    }
+
     // Contact address styling.
     .contact-address {
       font-weight: 200;
@@ -641,5 +661,14 @@ footer {
     display: block;
     color: $color-white;
     font-weight: 200;
+    img {
+      @include transition(all 0.3s);
+    }
+    &:hover {
+      img {
+        @include transition(all 0.3s);
+        opacity: .4;
+      }
+    }
   }
 }
