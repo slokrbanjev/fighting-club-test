@@ -19,7 +19,7 @@ de:
 
   desc_trainers: "Unsere Trainer sind Meister in ihren Disziplinen."
   subdesc_trainer1: "Hartmann ist der technische Leiter des Fighting Clubs. Der frühere Europameister im Kickboxen, Österreichmeister und Vize-Italienmeister im Boxen baute den Club (auch im wörtlichen Sinne) auf. Hartmann begeistert sich für jegliche sportliche Aktivität, unter Anderem Rafting, Radfahren und Schwimmen."
-  subdesc_trainer2: "Domenico, also known as Mimmo, is the President of the association. He leads the Boxing sessions later in the evening and is known for quite intense warm-up exercises. Mimmo is a passionate track and field athlete... Maecenas sed diam eget risus varius blandit sit amet non magna."
+  subdesc_trainer2: "Domenico, auch Mimmo genannt, ist der Vereinspräsident. He leads the Boxing sessions later in the evening and is known for quite intense warm-up exercises. Mimmo is a passionate track and field athlete... Maecenas sed diam eget risus varius blandit sit amet non magna."
   subdesc_trainer3:
   subdesc_trainer4:
   subdesc_trainer5:
@@ -49,10 +49,11 @@ de:
   subsection_join2: "2. Ärztliches Zeugnis"
   subsection_join3: "3. Probetraining"
   subsection_join4: "4. Mitgliedschaft"
-  subdesc_join1: "Contact the <a href="#trainers" class="smooth-link">trainer</a> who leads the course you are interested in and fix a trial appointment."
-  subdesc_join2: "Get a medical certificate from your doctor and bring it with you to the free trial appointment."
-  subdesc_join3: "Enjoy a free session compliments of us. You only need to bring your medical form, light athletic attire and indoor sports shoes."
-  subdesc_join4: "If you enjoyed the trial, sign up for a membership. The membership fee of EUR 50 is to be paid at the beginning of each month."
+  subdesc_join11: "Meld dich"
+  subdesc_join12: "zum Probetraining für den Kurs deiner Wahl."
+  subdesc_join2: "Besorge dir ein ärztliches Zeugnis bei deinem Sport- oder Hausarzt."
+  subdesc_join3: "Bring das ärztliche Zeugnis, leichte Sportbekleidung und Hallenschuhe mit."
+  subdesc_join4: "Dir hat's gefallen? Super! Besprich alles weitere mit deinem Trainer."
 
   desc_contact: "Please get in touch with us for any additional information about Fighting Club Meran/o or about our services."
   desc_contactaddress: "Fighting Club Meran<br> Otto Huber Straße (gegenüber Carolinum)<br>  39012 Meran (BZ)<br> Italien"
