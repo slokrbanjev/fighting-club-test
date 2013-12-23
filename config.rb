@@ -28,6 +28,7 @@ activate :deploy do |deploy|
   deploy.path   = "/var/www/fighting-club"
   # Optional Settings
   deploy.user  = "root" # no default
+  deploy.build_before = true
   # deploy.port  = 5309 # ssh port, default: 22
   # deploy.clean = true # remove orphaned files on remote host, default: false
   # deploy.flags = "-rltgoDvzO --no-p --del -e" # add custom flags, default: -avze
