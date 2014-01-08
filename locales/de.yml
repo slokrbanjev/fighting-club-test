@@ -12,20 +12,21 @@ de:
   subsection_judo: "Judo"
   subsection_brazilianjiujitsu: "Brazilian Jiu Jitsu"
   subdesc_boxing: "Boxing sessions last 90 minutes and work through a variety of excersizes including technique training, sparring, circuit training, strength excersizes and stretching. Sessions can be rough, but we always enforce safe practices and fairplay."
-  subdesc_kickboxing: "Just like our boxing classes, but with kicking! The 75 minute class incorporates conditioning excersizes, technique training and drilling, sparring, circuit training, strength excersizes and stretching."
+  subdesc_kickboxing: "Genau wie das Boxtraining, nur mit Kicks! The 75 minute class incorporates conditioning excersizes, technique training and drilling, sparring, circuit training, strength excersizes and stretching."
   subdesc_judo: "Judo is best known for its throwing techniques, but also involves grappling on the ground using specialized pins, control holds, arm locks and chokes. Our 90 minute class includes conditioning and strength excersizes, technique training, sparring, and stretching."
   subdesc_brazilianjiujitsu: "Brazilian jiu-jitsu is a grappling martial art and self-defense system based on leverage techniques, joint-locks and choke holds. The 90 minute classes include conditioning excersizes, technique training, live sparring, strength excersizes and stretching."
   button_signup: "Anmelden"
 
   desc_trainers: "Unsere Trainer sind Meister in ihren Disziplinen."
-  subdesc_trainer1: "Hartmann ist der technische Leiter des Fighting Clubs. Der frühere Europameister im Kickboxen, Österreichmeister und Vize-Italienmeister im Boxen baute den Club (auch im wörtlichen Sinne) auf. Hartmann begeistert sich für jegliche sportliche Aktivität, unter Anderem Rafting, Radfahren und Schwimmen."
-  subdesc_trainer2: "Domenico, auch Mimmo genannt, ist der Vereinspräsident. He leads the Boxing sessions later in the evening and is known for quite intense warm-up exercises. Mimmo is a passionate track and field athlete... Maecenas sed diam eget risus varius blandit sit amet non magna."
+  subdesc_trainer1: "Hartmann ist der technische Leiter des Fighting Clubs. Der frühere Europameister im Kickboxen, Österreichmeister und Vize-Italienmeister im Boxen baute den Club (auch im wörtlichen Sinne) auf."
+  subdesc_trainer2: "Domenico, auch Mimmo genannt, ist der Vereinspräsident. Er leitet das Boxtraining am späteren Abend und ist bekannt für sein intensives Aufwärmtraining."
   subdesc_trainer3:
   subdesc_trainer4:
   subdesc_trainer5:
   subdesc_trainer6:
   subdesc_trainer7:
   subdesc_trainer8:
+  subdesc_trainer9:
 
   desc_schedule: "Das ist unser Trainingsplan für die Wintersaison 2013-2014. Er ist gültig bis März 2014."
   schedule_monday: "Montag"
@@ -55,7 +56,8 @@ de:
   subdesc_join3: "Bring das ärztliche Zeugnis, leichte Sportbekleidung und Hallenschuhe mit."
   subdesc_join4: "Dir hat's gefallen? Super! Besprich alles weitere mit deinem Trainer."
 
-  desc_contact: "Please get in touch with us for any additional information about Fighting Club Meran/o or about our services."
+  desc_contact: "Bitte melde dich, falls du weitere Informationen über den Fighting Club Meran/o erhalten möchtest."
   desc_contactaddress: "Fighting Club Meran<br> Otto Huber Straße (gegenüber Carolinum)<br>  39012 Meran (BZ)<br> Italien"
   subsection_partners: "Partner"
   subdesc_partners: "Diese Organisationen unterstützen uns in unserer Tätigkeit:"
+  fb_follow: "Folge uns!"
