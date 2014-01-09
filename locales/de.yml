@@ -11,22 +11,22 @@ de:
   subsection_kickboxing: "Kickboxen"
   subsection_judo: "Judo"
   subsection_brazilianjiujitsu: "Brazilian Jiu Jitsu"
-  subdesc_boxing: "Boxing sessions last 90 minutes and work through a variety of excersizes including technique training, sparring, circuit training, strength excersizes and stretching. Sessions can be rough, but we always enforce safe practices and fairplay."
-  subdesc_kickboxing: "Genau wie das Boxtraining, nur mit Kicks! The 75 minute class incorporates conditioning excersizes, technique training and drilling, sparring, circuit training, strength excersizes and stretching."
-  subdesc_judo: "Judo is best known for its throwing techniques, but also involves grappling on the ground using specialized pins, control holds, arm locks and chokes. Our 90 minute class includes conditioning and strength excersizes, technique training, sparring, and stretching."
-  subdesc_brazilianjiujitsu: "Brazilian jiu-jitsu is a grappling martial art and self-defense system based on leverage techniques, joint-locks and choke holds. The 90 minute classes include conditioning excersizes, technique training, live sparring, strength excersizes and stretching."
+  subdesc_boxing: "Das Boxtraining dauert 90 Minuten und variiert von Session zu Session. Das Sparring kann manchmal hart sein – wir setzen aber immer auf Fairplay."
+  subdesc_kickboxing: "Genau wie das Boxtraining, nur mit Kicks! Trainingseinheiten beinhalten Technikübungen, Sparring, Zirkeltraining und Dehnungsübungen."
+  subdesc_judo: "Bei Judo trainieren wir Wurf-, Fall-, Schlag- und Bodentechniken. Unser Training dient als Vorbereitung auf die verschiedenen Gürtelprüfungen."
+  subdesc_brazilianjiujitsu: "Brazilian Jiu Jitsu ein Kampfsport und Selbstverteidigungssystem, das vor allem auf Bodenkampf und Wurftechniken basiert."
   button_signup: "Anmelden"
 
   desc_trainers: "Unsere Trainer sind Meister in ihren Disziplinen."
   subdesc_trainer1: "Hartmann ist der technische Leiter des Fighting Clubs. Der frühere Europameister im Kickboxen, Österreichmeister und Vize-Italienmeister im Boxen baute den Club (auch im wörtlichen Sinne) auf."
   subdesc_trainer2: "Domenico, auch Mimmo genannt, ist der Vereinspräsident. Er leitet das Boxtraining am späteren Abend und ist bekannt für sein intensives Aufwärmtraining."
-  subdesc_trainer3:
-  subdesc_trainer4:
-  subdesc_trainer5:
-  subdesc_trainer6:
-  subdesc_trainer7:
-  subdesc_trainer8:
-  subdesc_trainer9:
+  subdesc_trainer3: "Roberto..."
+  subdesc_trainer4: "Patrick ist der leitende Trainer von Brazilian Jiu Jitsu. Er hält einen braunen Gürtel und lernte selbst unter Helio und Robin Gracie, sowie unter Alessandro Federico."
+  subdesc_trainer5: "Daniel unterrichtet auch Brazilian Jiu Jitsu. Er hält einen braunen Gürtel und lernte ebenfalls unter Helio und Robin Gracie, sowie unter Alessandro Federico."
+  subdesc_trainer6: "Michael begleitet ebenfalls das Training von Brazilian Jiu Jitsu. Er hält einen blauen Gürtel und auch unter Helio und Robin Gracie, sowie unter Alessandro Federico."
+  subdesc_trainer7: "Heinrich..."
+  subdesc_trainer8: "Karl..."
+  subdesc_trainer9: "Oskar..."
 
   desc_schedule: "Das ist unser Trainingsplan für die Wintersaison 2013-2014. Er ist gültig bis März 2014."
   schedule_monday: "Montag"

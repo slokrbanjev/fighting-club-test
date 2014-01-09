@@ -11,22 +11,22 @@ en:
   subsection_kickboxing: "Kickboxing"
   subsection_judo: "Judo"
   subsection_brazilianjiujitsu: "Brazilian Jiu Jitsu"
-  subdesc_boxing: "Boxing sessions last 90 minutes and work through a variety of excersizes including technique training, sparring, circuit training, strength excersizes and stretching. Sessions can be rough, but we always enforce safe practices and fairplay."
-  subdesc_kickboxing: "Just like our boxing classes, but with kicking! The 75 minute class incorporates conditioning excersizes, technique training and drilling, sparring, circuit training, strength excersizes and stretching."
-  subdesc_judo: "Judo is best known for its throwing techniques, but also involves grappling on the ground using specialized pins, control holds, arm locks and chokes. Our 90 minute class includes conditioning and strength excersizes, technique training, sparring, and stretching."
-  subdesc_brazilianjiujitsu: "Brazilian jiu-jitsu is a grappling martial art and self-defense system based on leverage techniques, joint-locks and choke holds. The 90 minute classes include conditioning excersizes, technique training, live sparring, strength excersizes and stretching."
+  subdesc_boxing: "Boxing sessions last 90 minutes and work through a variety of excersizes. Sessions can be rough, but we always enforce safe practices and fairplay."
+  subdesc_kickboxing: "Just like our boxing classes, but with kicking! The 75 minute class incorporates technique training, sparring, circuit training and stretching."
+  subdesc_judo: "During Judo classes we train throwing, falling, striking and pin down techniques. Our training is a preparation for the official belt trials."
+  subdesc_brazilianjiujitsu: "Brazilian Jiu Jitsu is a grappling martial art and self-defense system based on leverage techniques, joint-locks and choke holds."
   button_signup: "Sign up"
 
   desc_trainers: "Our trainers are experts in their respective disciplines. They basically kick ass."
   subdesc_trainer1: "Hartmann has the technical leadership of the Fighting Club. The former European champion in Kickboxing, Austrian champion and Italian runner-up in Boxing literally built the Fighting Club by himself."
   subdesc_trainer2: "Domenico, also known as Mimmo, is the President of the association. He leads the Boxing sessions later in the evening and is known for quite intense warm-up exercises."
-  subdesc_trainer3:
-  subdesc_trainer4:
-  subdesc_trainer5:
-  subdesc_trainer6:
-  subdesc_trainer7:
-  subdesc_trainer8:
-  subdesc_trainer9:
+  subdesc_trainer3: "Roberto..."
+  subdesc_trainer4: "Patrick is the leading trainer of Brazilian Jiu Jitsu. He holds a brown belt and studied under Helio and Robin Gracie as well as under Alessandro Federico."
+  subdesc_trainer5: "Daniel also teaches Brazilian Jiu Jitsu. He holds a brown belt and studied under Helio and Robin Gracie as well as under Alessandro Federico."
+  subdesc_trainer6: "Michael supports the training Brazilian Jiu Jitsu. He holds a blue belt and studied under Helio and Robin Gracie as well as under Alessandro Federico."
+  subdesc_trainer7: "Heinrich..."
+  subdesc_trainer8: "Karl..."
+  subdesc_trainer9: "Oskar..."
 
   desc_schedule: "This is our Training Schedule for the Winter Season 2013/2014. It's valid till March 2014."
   schedule_monday: "Monday"
