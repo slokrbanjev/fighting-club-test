@@ -605,12 +605,6 @@ footer {
     a:hover {
       color: #696969;
     }
-    img {
-      width: 28%;
-      @media only screen and (max-width: 500px) {
-        width: 50%;
-      }  
-    }
 
     .title-descriptions {
       max-width: 80%;
@@ -646,7 +640,6 @@ footer {
         img {
           @include transition(all 0.3s);
           opacity: .4;
-
         }
       }
     }
@@ -661,8 +654,16 @@ footer {
     display: block;
     color: $color-white;
     font-weight: 200;
+    float: left;
+    margin: 0 0 0.4em;
+    width: 33%;
+    @media only screen and (max-width: 1000px) {
+      width: 50%;
+    }  
     img {
       @include transition(all 0.3s);
+      max-width: 80%;
+      max-height: 2.6em;
     }
     &:hover {
       img {
