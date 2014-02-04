@@ -57,9 +57,12 @@ de:
   subdesc_join4: "Dir hat's gefallen? Super! Besprich alles weitere mit deinem Trainer."
 
   desc_contact: "Bitte melde dich, falls du weitere Informationen über den Fighting Club Meran/o erhalten möchtest."
-  desc_contactaddress: "Fighting Club Meran<br> Otto Huber Straße 31 (gegenüber Carolinum)<br>  39012 Meran (BZ)<br> Italien"
+  desc_contactaddress: "Otto Huber Straße 31 (gegenüber Carolinum)<br>  39012 Meran (BZ)<br> Italien"
   subsection_partners: "Partner"
   subdesc_partners: "Diese Organisationen unterstützen uns in unserer Tätigkeit:"
   fb_follow: "Folge uns!"
 
   section_credits: "Impressum"
+  desc_VAT: "MwSt.:"
+  desc_BCP: "Design, Entwicklung und Hosting"
+  desc_BCP_address: "Iso Roobertinkatu 44 LH 1,<br> 00120 Helsinki,<br> Finnland"
