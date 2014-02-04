@@ -2,309 +2,248 @@
 title: Fighting Club Meran/o
 ---
 
-<div class="topbar">
-  <div class="container">
-    <ul class="language-menu">
-      <li><%= nav_link "Deutsch", "/de/" %></li>
-      <li><%= nav_link "Italiano", "/it/" %></li>
-      <li><%= nav_link "English", "/en/" %></li>
+<section class="content_wrapper" id="intro">
+  <h1 class= "main-slogan">Once a warrior<br/>always a warrior </h1>
+  <div class="by-line">
+    <p>
+      <%= t(:tagline) %>
+    </p>
+    <img class="glove glove-right" src="../assets/img/boxer-glove-right.png" />
+    <img class="glove glove-left" src="../assets/img/boxer-glove.png" />
+  </div>
+</section>
+<section class="content_wrapper" id="classes">
+  <div class="zen-box section-header">
+    <h2><%= t(:section_classes) %></h2>
+    <p class="title-descriptions"> 
+      <%= t(:desc_classes) %>
+    </p>
+  </div>  
+  <div class="zen-box four-col-1">
+    <img src="../assets/img/boxing.png" />
+    <h4 class="sub-title"><%= t(:subsection_boxing) %></h4>
+    <p>
+      <%= t(:subdesc_boxing) %>
+    </p>
+    <a href="mailto:hartmann90@libero.it?subject=Signup <%= t(:subsection_boxing) %>" class="big-button on-mobile"><%= t(:button_signup) %></a>  
+  </div>
+   <div class="zen-box four-col-2">
+    <img src="../assets/img/kickboxing.png">
+    <h4 class="sub-title"><%= t(:subsection_kickboxing) %></h4>
+    <p>
+      <%= t(:subdesc_kickboxing) %>
+    </p>
+    <a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_kickboxing) %>" class="big-button on-mobile"><%= t(:button_signup) %></a>
+  </div>
+  <div class="button-wrapper sign-up only-tablet">
+    <div class="zen-box four-col-3"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_boxing) %>" class="big-button"><%= t(:button_signup) %></a></div>
+    <div class="zen-box four-col-4"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_kickboxing) %>" class="big-button"><%= t(:button_signup) %></a></div>
+  </div>
+  <div class="zen-box four-col-3">
+    <img src="../assets/img/judo.png">
+    <h4 class="sub-title"><%= t(:subsection_judo) %></h4>
+    <p>
+      <%= t(:subdesc_judo) %>
+    </p>
+    <a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_judo) %>" class="big-button on-mobile"><%= t(:button_signup) %></a>
+  </div>
+  <div class="zen-box four-col-4">
+    <img src="../assets/img/juijitsu.png">
+    <h4 class="sub-title"><%= t(:subsection_brazilianjiujitsu) %></h4>
+    <p>
+      <%= t(:subdesc_brazilianjiujitsu) %>
+    </p>
+    <a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_brazilianjiujitsu) %>" class="big-button on-mobile"><%= t(:button_signup) %></a>
+  </div>
+  <div class="button-wrapper sign-up no-mobile no-tablet">
+    <div class="zen-box four-col-1"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_boxing) %>" class="big-button"><%= t(:button_signup) %></a></div>
+    <div class="zen-box four-col-2"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_kickboxing) %>" class="big-button"><%= t(:button_signup) %></a></div>
+    <div class="zen-box four-col-3"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_judo) %>" class="big-button"><%= t(:button_signup) %></a></div>
+    <div class="zen-box four-col-4"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_brazilianjiujitsu) %>" class="big-button"><%= t(:button_signup) %></a></div>
+  </div>
+  <div class="button-wrapper sign-up only-tablet">
+    <div class="zen-box four-col-3"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_judo) %>" class="big-button"><%= t(:button_signup) %></a></div>
+    <div class="zen-box four-col-4"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_brazilianjiujitsu) %>" class="big-button"><%= t(:button_signup) %></a></div>
+  </div>
+</section>
+<section class="content_wrapper" id="trainers">
+  <div class="zen-box section-header">
+    <h2><%= t(:section_trainers) %></h2>
+    <p class="title-descriptions">
+      <%= t(:desc_trainers) %>
+    </p>
+  </div> 
+  <div class="zen-box three-col-1">
+    <img src="../assets/img/trainers/trainer-1.jpg">
+    <h4 class="sub-title">Hartmann Stragenegg</h4>
+    <p>
+      <%= t(:subdesc_trainer1) %>
+    </p>
+  </div>
+  <div class="zen-box three-col-2">
+    <img src="../assets/img/trainers/trainer-5.jpg">
+    <h4 class="sub-title">Domenico Rucco</h4>
+    <p>
+      <%= t(:subdesc_trainer2) %>
+    </p>
+  </div>  
+     <div class="zen-box three-col-3">
+    <img src="../assets/img/trainers/trainer-7.jpg">
+    <h4 class="sub-title">Roberto Salgaro</h4>
+    <p>
+      <%= t(:subdesc_trainer3) %>
+    </p>
+  </div> 
+  <div class="zen-box three-col-1">
+    <img src="../assets/img/trainers/trainer-2.jpg">
+    <h4 class="sub-title">Patrick Benetti</h4>
+    <p>
+      <%= t(:subdesc_trainer4) %>
+    </p>
+  </div>
+  <div class="zen-box three-col-2">
+    <img src="../assets/img/trainers/trainer-4.jpg">
+    <h4 class="sub-title">Daniel Vesco</h4>
+    <p>
+      <%= t(:subdesc_trainer5) %>
+    </p>
+  </div>
+  <div class="zen-box three-col-3">
+    <img src="../assets/img/trainers/trainer-3.jpg">
+    <h4 class="sub-title">Michael Zuber</h4>
+    <p>
+      <%= t(:subdesc_trainer6) %>
+    </p>
+  </div>
+  <div class="zen-box three-col-1">
+    <img src="../assets/img/trainers/trainer-6.jpg">
+    <h4 class="sub-title">Heinrich Tomasi</h4>
+    <p>
+      <%= t(:subdesc_trainer7) %>
+    </p>
+  </div>
+   <div class="zen-box three-col-2">
+    <img src="../assets/img/trainers/trainer-9.jpg">
+    <h4 class="sub-title">Karl Pfeil</h4>
+    <p>
+      <%= t(:subdesc_trainer8) %>
+    </p>
+  </div>
+   <div class="zen-box three-col-3">
+    <img src="../assets/img/trainers/trainer-8.jpg">
+    <h4 class="sub-title">Oskar Carnevale</h4>
+    <p>
+      <%= t(:subdesc_trainer9) %>
+    </p>
+</section>
+<section class="content_wrapper" id="schedule">
+  <div class="zen-box section-header">
+    <h2><%= t(:section_schedule) %></h2>
+    <p class="title-descriptions">
+      <%= t(:desc_schedule) %>
+    </p>
+  </div>
+  <section class="zen-box timetable">
+    <div class="dow-container">
+      <div class="schedule">
+        <div class="day">
+          <h4 class="day_header"><%= t(:schedule_monday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
+          <div class="slots">
+            <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:schedule_kickboxing) %><br>15.00 – 16.15</div></div>
+            <div class="course boxing t1800 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>18.00 – 19.30</div></div>
+            <div class="course jiu-jitsu-kids t1815 s4 e2 left"><div class="text-surround"><%= t(:schedule_bjj_kids) %><br>18.15 – 19.15</div></div>
+            <div class="course boxing t1930 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>19.30 – 21.00</div></div>
+            <div class="course jiu-jitsu t2030 s6 e2 left"><div class="text-surround"><%= t(:schedule_bjj) %><br>20.30 – 22.00</div></div>
+          </div>
+        </div>
+        <div class="day">
+          <h4 class="day_header"><%= t(:schedule_tuesday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
+          <div class="slots">
+            <div class="course boxing-juniors t1730 s5 e1"><div class="text-surround"><%= t(:schedule_boxing_juniors) %><br>17.30 – 18.45</div></div>
+            <div class="course judo t1930 s6 e1"><div class="text-surround"><%= t(:schedule_judo) %><br>19.30 – 21.00</div></div>
+          </div>
+        </div>
+        <div class="day">
+          <h4 class="day_header"><%= t(:schedule_wednesday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
+          <div class="slots">
+          <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:schedule_kickboxing) %><br>15.00 – 16.15</div></div>
+            <div class="course boxing t1800 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>18.00 – 19.30</div></div>
+            <div class="course jiu-jitsu-kids t1815 s4 e2 left"><div class="text-surround"><%= t(:schedule_bjj_kids) %><br>18.15 – 19.15</div></div>
+            <div class="course boxing t1930 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>19.30 – 21.00</div></div>
+            <div class="course jiu-jitsu t2030 s6 e2 left"><div class="text-surround"><%= t(:schedule_bjj) %><br>20.30 – 22.00</div></div>
+          </div>
+        </div>
+        <div class="day">
+          <h4 class="day_header"><%= t(:schedule_thursday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
+          <div class="slots">
+            <div class="course boxing-juniors t1730 s5 e1"><div class="text-surround"><%= t(:schedule_boxing_juniors) %><br>17.30 – 18.45</div></div>
+            <div class="course judo t1930 s6 e1"><div class="text-surround"><%= t(:schedule_judo) %><br>19.30 – 21.00</div></div>
+          </div>
+        </div>
+        <div class="day">
+          <h4 class="day_header"><%= t(:schedule_friday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
+          <div class="slots">
+            <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:schedule_kickboxing) %><br>15.00 – 16.15</div></div>
+            <div class="course jiu-jitsu t1930 s6 e2 left"><div class="text-surround"><%= t(:schedule_bjj_free) %><br>19.30 – 21.00</div></div>
+            <div class="course boxing t1930 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>19.30 – 21.00</div></div>
+          </div>
+        </div>
+      </div>
+  </section>
+</section>
+
+<section class="content_wrapper" id="pictures">
+  <div class="zen-box section-header">
+    <h2><%= t(:section_pictures) %></h2>
+    <p class="title-descriptions">
+      <%= t(:desc_pictures) %>
+    </p>
+  </div>
+  <div class="zen-box full">
+    <ul class="gallery" style="width: 100%;">
+      <li><img src="../assets/img/slideshow/fight-club-slider-8.jpg" alt=""></li>
+      <li><img src="../assets/img/slideshow/fight-club-slider-1.jpg" alt=""></li>
+      <li><img src="../assets/img/slideshow/fight-club-slider-6.jpg" alt=""></li>
+      <li><img src="../assets/img/slideshow/fight-club-slider-9.jpg" alt=""></li>
+      <li><img src="../assets/img/slideshow/fight-club-slider-2.jpg" alt=""></li>
+      <li><img src="../assets/img/slideshow/fight-club-slider-7.jpg" alt=""></li>
     </ul>
   </div>
-</div>
-<div class="container">
-  <header>
-    <nav class="main-menu">
-      <ul>
-        <li><a class="anchor-link" href="#classes"><%= t(:section_classes) %></a></li>
-        <li><a class="anchor-link" href="#trainers"><%= t(:section_trainers) %></a></li>
-        <li><a class="anchor-link" href="#schedule"><%= t(:section_schedule) %></a></li>
-        <li><a class="anchor-link" href="#join"><%= t(:section_join) %></a></li>
-        <li><a class="anchor-link" href="#contact"><%= t(:section_contact) %></a></li>
-      </ul>
-    </nav>
-    <h1 class="title visuallyhidden">Fighting Club Meran/o</h1>
-    <a class="main-logo" id="main-logo" href="#topbar">
-      <img src="../assets/img/logo-v2.png" />
-    </a>
-  </header>
-  <section class="content_wrapper" id="intro">
-    <h1 class= "main-slogan">Once a warrior<br/>always a warrior </h1>
-    <div class="by-line">
-      <p>
-        <%= t(:tagline) %>
-      </p>
-      <img class="glove glove-right" src="../assets/img/boxer-glove-right.png" />
-      <img class="glove glove-left" src="../assets/img/boxer-glove.png" />
-    </div>
-  </section>
-  <section class="content_wrapper" id="classes">
-    <div class="zen-box section-header">
-      <h2><%= t(:section_classes) %></h2>
-      <p class="title-descriptions"> 
-        <%= t(:desc_classes) %>
-      </p>
-    </div>  
-    <div class="zen-box four-col-1">
-      <img src="../assets/img/boxing.png" />
-      <h4 class="sub-title"><%= t(:subsection_boxing) %></h4>
-      <p>
-        <%= t(:subdesc_boxing) %>
-      </p>
-      <a href="mailto:hartmann90@libero.it?subject=Signup <%= t(:subsection_boxing) %>" class="big-button on-mobile"><%= t(:button_signup) %></a>  
-    </div>
-     <div class="zen-box four-col-2">
-      <img src="../assets/img/kickboxing.png">
-      <h4 class="sub-title"><%= t(:subsection_kickboxing) %></h4>
-      <p>
-        <%= t(:subdesc_kickboxing) %>
-      </p>
-      <a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_kickboxing) %>" class="big-button on-mobile"><%= t(:button_signup) %></a>
-    </div>
-    <div class="button-wrapper sign-up only-tablet">
-      <div class="zen-box four-col-3"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_boxing) %>" class="big-button"><%= t(:button_signup) %></a></div>
-      <div class="zen-box four-col-4"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_kickboxing) %>" class="big-button"><%= t(:button_signup) %></a></div>
-    </div>
-    <div class="zen-box four-col-3">
-      <img src="../assets/img/judo.png">
-      <h4 class="sub-title"><%= t(:subsection_judo) %></h4>
-      <p>
-        <%= t(:subdesc_judo) %>
-      </p>
-      <a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_judo) %>" class="big-button on-mobile"><%= t(:button_signup) %></a>
-    </div>
-    <div class="zen-box four-col-4">
-      <img src="../assets/img/juijitsu.png">
-      <h4 class="sub-title"><%= t(:subsection_brazilianjiujitsu) %></h4>
-      <p>
-        <%= t(:subdesc_brazilianjiujitsu) %>
-      </p>
-      <a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_brazilianjiujitsu) %>" class="big-button on-mobile"><%= t(:button_signup) %></a>
-    </div>
-    <div class="button-wrapper sign-up no-mobile no-tablet">
-      <div class="zen-box four-col-1"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_boxing) %>" class="big-button"><%= t(:button_signup) %></a></div>
-      <div class="zen-box four-col-2"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_kickboxing) %>" class="big-button"><%= t(:button_signup) %></a></div>
-      <div class="zen-box four-col-3"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_judo) %>" class="big-button"><%= t(:button_signup) %></a></div>
-      <div class="zen-box four-col-4"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_brazilianjiujitsu) %>" class="big-button"><%= t(:button_signup) %></a></div>
-    </div>
-    <div class="button-wrapper sign-up only-tablet">
-      <div class="zen-box four-col-3"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_judo) %>" class="big-button"><%= t(:button_signup) %></a></div>
-      <div class="zen-box four-col-4"><a href="mailto:hartmann90@libero.it?subject=<%= t(:button_signup) %> <%= t(:subsection_brazilianjiujitsu) %>" class="big-button"><%= t(:button_signup) %></a></div>
-    </div>
-  </section>
-  <section class="content_wrapper" id="trainers">
-    <div class="zen-box section-header">
-      <h2><%= t(:section_trainers) %></h2>
-      <p class="title-descriptions">
-        <%= t(:desc_trainers) %>
-      </p>
-    </div> 
-    <div class="zen-box three-col-1">
-      <img src="../assets/img/trainers/trainer-1.jpg">
-      <h4 class="sub-title">Hartmann Stragenegg</h4>
-      <p>
-        <%= t(:subdesc_trainer1) %>
-      </p>
-    </div>
-    <div class="zen-box three-col-2">
-      <img src="../assets/img/trainers/trainer-5.jpg">
-      <h4 class="sub-title">Domenico Rucco</h4>
-      <p>
-        <%= t(:subdesc_trainer2) %>
-      </p>
-    </div>  
-       <div class="zen-box three-col-3">
-      <img src="../assets/img/trainers/trainer-7.jpg">
-      <h4 class="sub-title">Roberto Salgaro</h4>
-      <p>
-        <%= t(:subdesc_trainer3) %>
-      </p>
-    </div> 
-    <div class="zen-box three-col-1">
-      <img src="../assets/img/trainers/trainer-2.jpg">
-      <h4 class="sub-title">Patrick Benetti</h4>
-      <p>
-        <%= t(:subdesc_trainer4) %>
-      </p>
-    </div>
-    <div class="zen-box three-col-2">
-      <img src="../assets/img/trainers/trainer-4.jpg">
-      <h4 class="sub-title">Daniel Vesco</h4>
-      <p>
-        <%= t(:subdesc_trainer5) %>
-      </p>
-    </div>
-    <div class="zen-box three-col-3">
-      <img src="../assets/img/trainers/trainer-3.jpg">
-      <h4 class="sub-title">Michael Zuber</h4>
-      <p>
-        <%= t(:subdesc_trainer6) %>
-      </p>
-    </div>
-    <div class="zen-box three-col-1">
-      <img src="../assets/img/trainers/trainer-6.jpg">
-      <h4 class="sub-title">Heinrich Tomasi</h4>
-      <p>
-        <%= t(:subdesc_trainer7) %>
-      </p>
-    </div>
-     <div class="zen-box three-col-2">
-      <img src="../assets/img/trainers/trainer-9.jpg">
-      <h4 class="sub-title">Karl Pfeil</h4>
-      <p>
-        <%= t(:subdesc_trainer8) %>
-      </p>
-    </div>
-     <div class="zen-box three-col-3">
-      <img src="../assets/img/trainers/trainer-8.jpg">
-      <h4 class="sub-title">Oskar Carnevale</h4>
-      <p>
-        <%= t(:subdesc_trainer9) %>
-      </p>
-  </section>
-  <section class="content_wrapper" id="schedule">
-    <div class="zen-box section-header">
-      <h2><%= t(:section_schedule) %></h2>
-      <p class="title-descriptions">
-        <%= t(:desc_schedule) %>
-      </p>
-    </div>
-    <section class="zen-box timetable">
-      <div class="dow-container">
-        <div class="schedule">
-          <div class="day">
-            <h4 class="day_header"><%= t(:schedule_monday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
-            <div class="slots">
-              <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:schedule_kickboxing) %><br>15.00 – 16.15</div></div>
-              <div class="course boxing t1800 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>18.00 – 19.30</div></div>
-              <div class="course jiu-jitsu-kids t1815 s4 e2 left"><div class="text-surround"><%= t(:schedule_bjj_kids) %><br>18.15 – 19.15</div></div>
-              <div class="course boxing t1930 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>19.30 – 21.00</div></div>
-              <div class="course jiu-jitsu t2030 s6 e2 left"><div class="text-surround"><%= t(:schedule_bjj) %><br>20.30 – 22.00</div></div>
-            </div>
-          </div>
-          <div class="day">
-            <h4 class="day_header"><%= t(:schedule_tuesday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
-            <div class="slots">
-              <div class="course boxing-juniors t1730 s5 e1"><div class="text-surround"><%= t(:schedule_boxing_juniors) %><br>17.30 – 18.45</div></div>
-              <div class="course judo t1930 s6 e1"><div class="text-surround"><%= t(:schedule_judo) %><br>19.30 – 21.00</div></div>
-            </div>
-          </div>
-          <div class="day">
-            <h4 class="day_header"><%= t(:schedule_wednesday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
-            <div class="slots">
-            <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:schedule_kickboxing) %><br>15.00 – 16.15</div></div>
-              <div class="course boxing t1800 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>18.00 – 19.30</div></div>
-              <div class="course jiu-jitsu-kids t1815 s4 e2 left"><div class="text-surround"><%= t(:schedule_bjj_kids) %><br>18.15 – 19.15</div></div>
-              <div class="course boxing t1930 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>19.30 – 21.00</div></div>
-              <div class="course jiu-jitsu t2030 s6 e2 left"><div class="text-surround"><%= t(:schedule_bjj) %><br>20.30 – 22.00</div></div>
-            </div>
-          </div>
-          <div class="day">
-            <h4 class="day_header"><%= t(:schedule_thursday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
-            <div class="slots">
-              <div class="course boxing-juniors t1730 s5 e1"><div class="text-surround"><%= t(:schedule_boxing_juniors) %><br>17.30 – 18.45</div></div>
-              <div class="course judo t1930 s6 e1"><div class="text-surround"><%= t(:schedule_judo) %><br>19.30 – 21.00</div></div>
-            </div>
-          </div>
-          <div class="day">
-            <h4 class="day_header"><%= t(:schedule_friday) %> <span class="day-toggle on-mobile">⬇︎</span></h4>
-            <div class="slots">
-              <div class="course kick-boxing t1500 s5 e1"><div class="text-surround"><%= t(:schedule_kickboxing) %><br>15.00 – 16.15</div></div>
-              <div class="course jiu-jitsu t1930 s6 e2 left"><div class="text-surround"><%= t(:schedule_bjj_free) %><br>19.30 – 21.00</div></div>
-              <div class="course boxing t1930 s6 e2 right"><div class="text-surround"><%= t(:schedule_boxing) %><br>19.30 – 21.00</div></div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </section>
+</section>     
 
-  <section class="content_wrapper" id="pictures">
-    <div class="zen-box section-header">
-      <h2><%= t(:section_pictures) %></h2>
-      <p class="title-descriptions">
-        <%= t(:desc_pictures) %>
-      </p>
-    </div>
-    <div class="zen-box full">
-      <ul class="gallery" style="width: 100%;">
-        <li><img src="../assets/img/slideshow/fight-club-slider-8.jpg" alt=""></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-1.jpg" alt=""></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-6.jpg" alt=""></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-9.jpg" alt=""></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-2.jpg" alt=""></li>
-        <li><img src="../assets/img/slideshow/fight-club-slider-7.jpg" alt=""></li>
-      </ul>
-    </div>
-  </section>     
-
-  <section class="content_wrapper" id="join">
-    <div class="zen-box section-header">
-      <h2><%= t(:section_join) %></h2>
-      <p class="title-descriptions">
-        <%= t(:desc_join) %>
-      </p>
-    </div>
-    <div class="zen-box four-col-1">
-      <img src="../assets/img/contact.png" alt="Icon contact">
-      <h4 class="sub-title"><%= t(:subsection_join1) %></h4>
-      <p>
-        <a href="#classes" class="smooth-link"><%= t(:subdesc_join11) %></a> <%= t(:subdesc_join12) %>
-      </p>
-    </div>
-    <div class="zen-box four-col-2">
-      <img src="../assets/img/medical.png" alt="Icon medical">
-      <h4 class="sub-title"><%= t(:subsection_join2) %></h4>
-      <p>
-        <%= t(:subdesc_join2) %>
-      </p>
-    </div>
-    <div class="zen-box four-col-3">
-      <img src="../assets/img/trial.png" alt="Icon trial">
-      <h4 class="sub-title"><%= t(:subsection_join3) %></h4>
-      <p>
-        <%= t(:subdesc_join3) %>
-      </p>
-    </div>
-    <div class="zen-box four-col-4">
-      <img src="../assets/img/member.png" alt="Icon member">
-      <h4 class="sub-title"><%= t(:subsection_join4) %></h4>
-      <p>
-        <%= t(:subdesc_join4) %>
-      </p>
-    </div>
-  </section>
-</div> 
-<footer>
-  <div class="overlay">
-    <div class="container">
-      <section class="content_wrapper" id="contact"> 
-        <div class="section-header contact-info">
-          <div class="zen-box two-col-1">
-            <h2><%= t(:section_contact) %></h2>
-          </div>        
-        </div>
-        <div class="section-header contact-info">
-          <div class="zen-box two-col-1">               
-            <p class="title-descriptions">
-              <%= t(:desc_contact) %>
-            </p>
-            <a class="contact-email" href="mailto:hartmann90@libero.it">hartmann90@libero.it</a>
-            <p class="contact-phone">+39 338 2445844</p>
-            <a class="contact-fb" href="https://www.facebook.com/FightingClubMerano" target="_blank"><img src="../assets/img/fb-icon.svg" alt="Logo Facebook"><%= t(:fb_follow) %></a>
-            <div class="contact-address">
-              <%= t(:desc_contactaddress) %>
-            </div>
-          </div>
-          <div class="zen-box two-col-2">
-            <h3><%= t(:subsection_partners) %></h3>
-            <p class="title-descriptions">
-              <%= t(:subdesc_partners) %>
-            </p>
-            <a class="partner-link" target="_blank" href="http://pixels.booncon.com"><img src="../assets/img/logo_bc-pixels-v1.1-invert.svg" alt="Logo booncon PIXELS" /></a>
-             <a class="partner-link" target="_blank" href="http://www.cafeamtore.com"><img src="../assets/img/cafe_tore-logo.svg" alt="Logo Cafe am Tore" /></a>
-              <a class="partner-link" target="_blank" href="https://foursquare.com/v/kosmetiksalon-ladurner/4d6536f0072a6ea81bc6fa4d"><img src="../assets/img/salon-ladurner-logo.svg" alt="Logo Salon Ladurner" /></a>
-          </div>
-        </div>    
-      </section>
-    </div>  
+<section class="content_wrapper" id="join">
+  <div class="zen-box section-header">
+    <h2><%= t(:section_join) %></h2>
+    <p class="title-descriptions">
+      <%= t(:desc_join) %>
+    </p>
   </div>
-</footer> 
+  <div class="zen-box four-col-1">
+    <img src="../assets/img/contact.png" alt="Icon contact">
+    <h4 class="sub-title"><%= t(:subsection_join1) %></h4>
+    <p>
+      <a href="#classes" class="smooth-link"><%= t(:subdesc_join11) %></a> <%= t(:subdesc_join12) %>
+    </p>
+  </div>
+  <div class="zen-box four-col-2">
+    <img src="../assets/img/medical.png" alt="Icon medical">
+    <h4 class="sub-title"><%= t(:subsection_join2) %></h4>
+    <p>
+      <%= t(:subdesc_join2) %>
+    </p>
+  </div>
+  <div class="zen-box four-col-3">
+    <img src="../assets/img/trial.png" alt="Icon trial">
+    <h4 class="sub-title"><%= t(:subsection_join3) %></h4>
+    <p>
+      <%= t(:subdesc_join3) %>
+    </p>
+  </div>
+  <div class="zen-box four-col-4">
+    <img src="../assets/img/member.png" alt="Icon member">
+    <h4 class="sub-title"><%= t(:subsection_join4) %></h4>
+    <p>
+      <%= t(:subdesc_join4) %>
+    </p>
+  </div>
+</section>

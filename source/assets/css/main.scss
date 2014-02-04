@@ -673,3 +673,25 @@ footer {
     }
   }
 }
+
+.credit-line {
+  text-align: center;
+  font-size: 0.72em;
+  .credit-link {
+    font-weight: 400;
+    color: #e24b70;
+    &:hover {
+      opacity: 0.68;
+    }
+  }
+  .copy-link {
+    // float: left;
+    a {
+      color: #fff;
+      font-weight: 400;
+      &:hover {
+        opacity: 0.68;
+      }
+    }
+  }
+}

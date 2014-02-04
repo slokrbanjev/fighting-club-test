@@ -8,10 +8,13 @@ $(document).ready(function () {
   });
   $('.main-menu a, .smooth-link, .mean-nav a').click(function (e) {
     var target = $(this).attr('href');
+    if ($(this).hasClass('anchor-link')) {
+      target = '#' + target.split('#')[1];
+    }
     $('body, html').animate({
       scrollTop: $(target).offset().top
     }, 600);
-    return false;
+    // return false;
   });
   if ($('.glove').css('transitionDuration') !== '0s') {
     $(document).on('scroll', function () {

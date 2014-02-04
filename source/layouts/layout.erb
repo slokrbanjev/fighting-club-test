@@ -16,7 +16,71 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="topbar">
+      <div class="container">
+        <ul class="language-menu">
+          <li><%= nav_link "Deutsch", "/de/" %></li>
+          <li><%= nav_link "Italiano", "/it/" %></li>
+          <li><%= nav_link "English", "/en/" %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <header>
+        <nav class="main-menu">
+          <ul>
+            <li><%= nav_link t(:section_classes), "index.html#classes", :class => 'anchor-link' %></li>
+            <li><%= nav_link t(:section_trainers), "index.html#trainers", :class => 'anchor-link' %></li>
+            <li><%= nav_link t(:section_schedule), "index.html#schedule", :class => 'anchor-link' %></li>
+            <li><%= nav_link t(:section_join), "index.html#join", :class => 'anchor-link' %></li>
+            <li><%= nav_link t(:section_contact), "index.html#contact", :class => 'anchor-link' %></li>
+          </ul>
+        </nav>
+        <h1 class="title visuallyhidden">Fighting Club Meran/o</h1>
+        <a class="main-logo" id="main-logo" href="index.html#topbar">
+          <img src="../assets/img/logo-v2.png" />
+        </a>
+      </header>
+      <%= yield %>      
+    </div> 
+    <footer>
+      <div class="overlay">
+        <div class="container">
+          <section class="content_wrapper" id="contact"> 
+            <div class="section-header contact-info">
+              <div class="zen-box two-col-1">
+                <h2><%= t(:section_contact) %></h2>
+              </div>        
+            </div>
+            <div class="section-header contact-info">
+              <div class="zen-box two-col-1">               
+                <p class="title-descriptions">
+                  <%= t(:desc_contact) %>
+                </p>
+                <a class="contact-email" href="mailto:hartmann90@libero.it">hartmann90@libero.it</a>
+                <p class="contact-phone">+39 338 2445844</p>
+                <a class="contact-fb" href="https://www.facebook.com/FightingClubMerano" target="_blank"><img src="../assets/img/fb-icon.svg" alt="Logo Facebook"><%= t(:fb_follow) %></a>
+                <div class="contact-address">
+                  <%= t(:desc_contactaddress) %>
+                </div>                
+              </div>
+              <div class="zen-box two-col-2">
+                <h3><%= t(:subsection_partners) %></h3>
+                <p class="title-descriptions">
+                  <%= t(:subdesc_partners) %>
+                </p>
+                <a class="partner-link" target="_blank" href="http://pixels.booncon.com"><img src="../assets/img/logo_bc-pixels-v1.1-invert.svg" alt="Logo booncon PIXELS" /></a>
+                 <a class="partner-link" target="_blank" href="http://www.cafeamtore.com"><img src="../assets/img/cafe_tore-logo.svg" alt="Logo Cafe am Tore" /></a>
+                  <a class="partner-link" target="_blank" href="https://foursquare.com/v/kosmetiksalon-ladurner/4d6536f0072a6ea81bc6fa4d"><img src="../assets/img/salon-ladurner-logo.svg" alt="Logo Salon Ladurner" /></a>
+              </div>
+            </div>    
+          </section>
+          <section class="content_wrapper">
+            <div class="zen-box credit-line"><span class="copy-link">© 2014 FightingClub Meran/o | <%= nav_link t(:section_credits), "impressum.html" %></span> | Crafted by <a href="http://pixels.booncon.com" target="_blank" class="credit-link">booncon PIXELS</a></div>
+          </section>
+        </div>
+      </div>
+    </footer>
   </body>
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -24,9 +88,13 @@
   <%= javascript_include_tag "main" %>
   <!-- Google Analytics -->
   <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-47313308-1', 'fightingclub.it');
+    ga('send', 'pageview');
+
   </script>
 </html>
