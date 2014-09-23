@@ -29,8 +29,9 @@ de:
   subdesc_trainer5: "Daniel unterrichtet auch Brazilian Jiu Jitsu. Er hält einen braunen Gürtel und lernte ebenfalls unter Helio und Robin Gracie, sowie unter Alessandro Federico."
   subdesc_trainer6: "Michael begleitet ebenfalls das Training von Brazilian Jiu Jitsu. Er hält einen blauen Gürtel und auch unter Helio und Robin Gracie, sowie unter Alessandro Federico."
   subdesc_trainer7: "Heinrich ist der leitende Trainer der Sektion Judo. Er hält einen schwarzen Gürtel des dritten Dan."
-  subdesc_trainer8: "Karl ist ebenfalls Judo Trainer. Auch er hält einen schwarzen Gürtel des dritten Dan."
+  subdesc_trainer8: "Milan ist unser Taekwondo Trainer. Er ist diplomierter Sportlehrer und hält den ersten Dan im olympischen Taekwondo."
   subdesc_trainer9: "Oskar, Trainer der Sektion Kickboxen, genannt der 'Unaufhaltbare'. Ein Name, eine Garantie."
+  subdesc_trainer10: "Karl ist ebenfalls Judo Trainer. Auch er hält einen schwarzen Gürtel des dritten Dan."
 
   desc_schedule: "Das ist unser aktueller Trainingsplan. Er ist gültig bis September 2014."
   schedule_monday: "Montag"
@@ -45,6 +46,8 @@ de:
   schedule_bjj: "Brazilian Jiu Jitsu"
   schedule_bjj_kids: "Brazilian Jiu Jitsu 'Kids'"
   schedule_bjj_free: "Brazilian Jiu Jitsu 'Free'"
+  schedule_taekwondo: "Taekwondo"
+  schedule_taekwondo_kids: "Taekwondo 'Kids'"
 
   section_pictures: "Bilder"
   desc_pictures: "Schau dir unsere Bildergalerie an. Hier siehst du unsere neue Trainingshalle und Aufnahmen von verschiedenen Kursen."

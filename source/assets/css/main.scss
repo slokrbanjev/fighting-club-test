@@ -28,6 +28,8 @@ $color-juniorboxing: darken($color-boxing, 10%);
 $color-jj: #C6BA48;
 $color-jjkids: darken($color-jj, 10%);
 $color-judo: #6A6747;
+$color-taekwondo-kids: #464216;
+$color-taekwondo: lighten($color-taekwondo-kids, 10%);
 
 $box-sizing-polyfill-path: "boxsizing.htc";
 
@@ -528,6 +530,12 @@ header {
         }
         &.judo {
           @include set-event-color($color-judo);
+        }
+        &.taekwondo {
+          @include set-event-color($color-taekwondo);
+        }
+        &.taekwondo-kids {
+          @include set-event-color($color-taekwondo-kids);
         }
         // defines the position (top) of timeslot 
         @for $i from 0 through $timeslots-per-hour * $total-hours {

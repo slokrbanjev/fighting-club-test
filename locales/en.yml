@@ -29,8 +29,9 @@ en:
   subdesc_trainer5: "Daniel also teaches Brazilian Jiu Jitsu. He holds a brown belt and studied under Helio and Robin Gracie as well as under Alessandro Federico."
   subdesc_trainer6: "Michael supports the training Brazilian Jiu Jitsu. He holds a blue belt and studied under Helio and Robin Gracie as well as under Alessandro Federico."
   subdesc_trainer7: "Heinrich is the leading trainer of the Judo section. He holds a black belt of the third Dan."
-  subdesc_trainer8: "Karl is an instructor in the Judo section. He also holds a black belt of the third Dan."
+  subdesc_trainer8: "Milan is our Taekwondo instructor. He is a qualified sports teacher and holds the first Dan in olympic Taekwondo."
   subdesc_trainer9: "Oskar the Kickboxing instructor is also referred to as the 'Unstoppable'. Don't try to stop him."
+  subdesc_trainer10: "Karl is an instructor in the Judo section. He also holds a black belt of the third Dan."
 
   desc_schedule: "This is our current Training Schedule. It's valid till September 2014."
   schedule_monday: "Monday"
@@ -45,6 +46,8 @@ en:
   schedule_bjj: "Brazilian Jiu Jitsu"
   schedule_bjj_kids: "Brazilian Jiu Jitsu 'Kids'"
   schedule_bjj_free: "Brazilian Jiu Jitsu 'Free'"
+  schedule_taekwondo: "Taekwondo"
+  schedule_taekwondo_kids: "Taekwondo 'Kids'"
 
   section_pictures: "Pictures"
   desc_pictures: "Have a look through our gallery, where you can catch a glimps of our new facilities."

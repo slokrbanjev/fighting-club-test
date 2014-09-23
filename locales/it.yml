@@ -29,8 +29,9 @@ it:
   subdesc_trainer5: "Daniel è il secondo allenatore di Brazilian Jiu Jitsu. Anche lui porta la cintura marrone ed è allievo di Helio e Robin Gracie, e di Alessandro Federico."
   subdesc_trainer6: "Michael accompagna anche l'allenamento di Brazilian Jiu Jitsu. Porta la cintura azzurra ed è anche lui allievo di Helio e Robin Gracie, e di Alessandro Federico."
   subdesc_trainer7: "Heinrich è responsabile della sezione di Judo. Lui porta la cintura nera del terzo Dan."
-  subdesc_trainer8: "Karl è un istruttore di Judo. Anche lui porta la cintura nera del terzo Dan."
+  subdesc_trainer8: "Milan è il nostro allenatore di Taekwondo. Lui è un monitore diplomato e ha un primo Dan di Taekwondo olimpico."
   subdesc_trainer9: "Oskar, allenatore di kickboxing, chiamato l'infermabile. Un nome una garanzia."
+  subdesc_trainer10: "Karl è un istruttore di Judo. Anche lui porta la cintura nera del terzo Dan."
 
   desc_schedule: "Questo è l'attuale piano d'allenamento. È valido fino a settembre 2014."
   schedule_monday: "Lunedì"
@@ -45,6 +46,8 @@ it:
   schedule_bjj: "Brazilian Jiu Jitsu"
   schedule_bjj_kids: "Brazilian Jiu Jitsu 'Kids'"
   schedule_bjj_free: "Brazilian Jiu Jitsu 'Free'"
+  schedule_taekwondo: "Taekwondo"
+  schedule_taekwondo_kids: "Taekwondo 'Kids'"
 
   section_pictures: "Immagini"
   desc_pictures: "Guarda la nostra galleria. Vedi la nostra palestra ed alcune immagini dei corsi."
