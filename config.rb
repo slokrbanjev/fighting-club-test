@@ -1,6 +1,6 @@
 require 'zen-grids'
 
-activate :i18n, :mount_at_root => false
+activate :i18n, :mount_at_root => :de
 activate :livereload
 
 helpers do
