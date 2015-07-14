@@ -151,6 +151,16 @@ $box-sizing-polyfill-path: "boxsizing.htc";
   }
 }
 
+.mobile-only {
+  display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-only {
+    display: block !important;
+  }
+}  
+
 // Title Description Text wraps to eliminate need for line breaks.
 .title-descriptions {
   max-width: 60%;

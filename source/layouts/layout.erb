@@ -19,7 +19,7 @@
     <div class="topbar">
       <div class="container">
         <ul class="language-menu">
-          <li><%= nav_link "Deutsch", "/de/" %></li>
+          <li><%= nav_link "Deutsch", "/" %></li>
           <li><%= nav_link "Italiano", "/it/" %></li>
           <li><%= nav_link "English", "/en/" %></li>
         </ul>
@@ -34,6 +34,14 @@
             <li><%= nav_link t(:section_schedule), "index.html#schedule", :class => 'anchor-link' %></li>
             <li><%= nav_link t(:section_join), "index.html#join", :class => 'anchor-link' %></li>
             <li><%= nav_link t(:section_contact), "index.html#contact", :class => 'anchor-link' %></li>
+            <li class="mobile-only">              
+              <a href="#!" class="language"><%= t(:language_switch) %></a>
+              <ul class="language-menu">
+                <li><%= nav_link "Deutsch", "/" %></li>
+                <li><%= nav_link "Italiano", "/it/" %></li>
+                <li><%= nav_link "English", "/en/" %></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <h1 class="title visuallyhidden">Fighting Club Meran/o</h1>

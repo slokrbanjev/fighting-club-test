@@ -6,6 +6,8 @@ it:
   section_join: "Iscrizione"
   section_contact: "Contatti"
 
+  language_switch: "Cambia lingua"
+
   desc_classes: "Il Fighting Club offre corsi di quattro discipline: pugilato, kickboxing, Judo e Brazilian Jiu Jitsu. I soci possono partecipare ai vari corsi dopo essersi consultati con l'allenatore del momento."
   subsection_boxing: "Pugilato amatoriale"
   subsection_kickboxing: "Kickboxing"

@@ -6,7 +6,7 @@ $(document).ready(function () {
     // onePage: true,
     meanScreenWidth: 600
   });
-  $('.main-menu a, .smooth-link, .mean-nav a').click(function (e) {
+  $('.main-menu a, .smooth-link, .mean-nav a:not(.mean-expand)').click(function (e) {
     var target = $(this).attr('href');
     if ($(this).hasClass('anchor-link')) {
       target = '#' + target.split('#')[1];
