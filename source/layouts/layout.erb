@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
@@ -34,7 +34,7 @@
             <li><%= nav_link t(:section_schedule), "index.html#schedule", :class => 'anchor-link' %></li>
             <li><%= nav_link t(:section_join), "index.html#join", :class => 'anchor-link' %></li>
             <li><%= nav_link t(:section_contact), "index.html#contact", :class => 'anchor-link' %></li>
-            <li class="mobile-only">              
+            <li class="mobile-only">
               <a href="#!" class="language"><%= t(:language_switch) %></a>
               <ul class="language-menu">
                 <li><%= nav_link "Deutsch", "/" %></li>
@@ -49,19 +49,19 @@
           <img src="../assets/img/logo-v2.png" />
         </a>
       </header>
-      <%= yield %>      
-    </div> 
+      <%= yield %>
+    </div>
     <footer>
       <div class="overlay">
         <div class="container">
-          <section class="content_wrapper" id="contact"> 
+          <section class="content_wrapper" id="contact">
             <div class="section-header contact-info">
               <div class="zen-box two-col-1">
                 <h2><%= t(:section_contact) %></h2>
-              </div>        
+              </div>
             </div>
             <div class="section-header contact-info">
-              <div class="zen-box two-col-1">               
+              <div class="zen-box two-col-1">
                 <p class="title-descriptions">
                   <%= t(:desc_contact) %>
                 </p>
@@ -74,28 +74,28 @@
                   <br>
                   Cassa Rurale Novella e Alta Anaunia<br>
                   IBAN: IT68Q0820058490000010000293
-                </div>                
+                </div>
               </div>
               <div class="zen-box two-col-2">
                 <h3><%= t(:subsection_partners) %></h3>
                 <p class="title-descriptions">
                   <%= t(:subdesc_partners) %>
                 </p>
-                <a class="partner-link" target="_blank" href="http://pixels.booncon.com"><img src="../assets/img/logo_bc-pixels-v1.1-invert.svg" alt="Logo booncon PIXELS" /></a>
+                <a class="partner-link" target="_blank" href="https://booncon.com"><img src="../assets/img/logo_bc-inverted.svg" alt="Logo booncon" /></a>
                  <a class="partner-link" target="_blank" href="http://www.cafeamtore.com"><img src="../assets/img/cafe_tore-logo.svg" alt="Logo Cafe am Tore" /></a>
                   <a class="partner-link" target="_blank" href="https://foursquare.com/v/kosmetiksalon-ladurner/4d6536f0072a6ea81bc6fa4d"><img src="../assets/img/salon-ladurner-logo.svg" alt="Logo Salon Ladurner" /></a>
                   <a class="partner-link" target="_blank" href="http://torggler.com"><img src="../assets/img/logo_torggler.svg" alt="Logo Torggler" /></a>
               </div>
-            </div>    
+            </div>
           </section>
           <section class="content_wrapper">
-            <div class="zen-box credit-line"><span class="copy-link">© 2014 FightingClub Meran/o | <%= nav_link t(:section_credits), "credits.html" %></span> | Crafted by <a href="http://pixels.booncon.com" target="_blank" class="credit-link">booncon PIXELS</a></div>
+            <div class="zen-box credit-line"><span class="copy-link">© 2017 FightingClub Meran/o | <%= nav_link t(:section_credits), "credits.html" %></span> | Crafted by <a href="https://pixels.fi" target="_blank" class="credit-link">Pixels</a></div>
           </section>
         </div>
       </div>
     </footer>
   </body>
-  
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
   <%= javascript_include_tag "main" %>

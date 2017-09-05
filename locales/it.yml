@@ -21,7 +21,7 @@ it:
   signupmail_boxing: "domenico.rucco79@gmail.com"
   signupmail_kickboxing: "oskioskis@gmail.com"
   signupmail_judo: "tomasiheinrich@libero.it"
-  signupmail_bjj: "patrick781@hotmail.it"
+  signupmail_bjj: "patrickb@outlook.it"
 
   desc_trainers: "I nostri allenatori sono tutti maestri nelle proprie discipline."
   subdesc_trainer1: "Hartmann è il responsabile tecnico del Fighting Club. L'excampione europeo di kickboxing, vice campione italiano di pugilato nel 1995 e campione nazionale austriaco nel 1996 e 2001 ha costruito la sezione del pugilato (anche nel vero senso della parola)."
@@ -76,4 +76,4 @@ it:
   section_credits: "Credits"
   desc_VAT: "Part. IVA:"
   desc_BCP: "Design, sviluppo e hosting"
-  desc_BCP_address: "Annankatu 25 H 43,<br> 00100 Helsinki,<br> Finlandia"
+  desc_BCP_address: "Eerikinkatu 28,<br> 00180 Helsinki,<br> Finlandia"

@@ -4,9 +4,10 @@ source 'http://rubygems.org'
 
 gem "zen-grids"
 
-gem "middleman", "~>3.2.0"
+gem "middleman"
+gem "middleman-compass"
 
-# Live-reloading plugin
 gem "middleman-livereload"
 
-gem "middleman-deploy"
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
+gem 'middleman-sprockets'

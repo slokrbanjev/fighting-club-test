@@ -21,7 +21,7 @@ de:
   signupmail_boxing: "hartmann90@libero.it"
   signupmail_kickboxing: "oskioskis@gmail.com"
   signupmail_judo: "tomasiheinrich@libero.it"
-  signupmail_bjj: "patrick781@hotmail.it"
+  signupmail_bjj: "patrickb@outlook.it"
 
   desc_trainers: "Unsere Trainer sind Meister in ihren Disziplinen."
   subdesc_trainer1: "Hartmann ist der technische Leiter des Fighting Clubs. Der frühere Europameister im Kickboxen, Vize-Italienmeister (1995) und Österreichmeister (1996, 2001) im Boxen baute den Club (auch im wörtlichen Sinne) auf."
@@ -76,4 +76,4 @@ de:
   section_credits: "Impressum"
   desc_VAT: "MwSt.:"
   desc_BCP: "Design, Entwicklung und Hosting"
-  desc_BCP_address: "Annankatu 25 H 43,<br> 00100 Helsinki,<br> Finnland"
+  desc_BCP_address: "Eerikinkatu 28,<br> 00180 Helsinki,<br> Finnland"
