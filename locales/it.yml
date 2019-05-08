@@ -67,6 +67,13 @@ it:
   subdesc_join3: "Porta il certificato, indumenti sportivi e scarpe da palestra."
   subdesc_join4: "Ti è piaciuto? Bene! Consultati con l'allenatore."
 
+  section_schools: "Proposta per le scuole"
+  desc_schools: "Progetto: Rafforzare la competenza sociale verso l'autodifesa"
+  desc_schools_i1: "Sport da combattimento"
+  desc_schools_i2: "Difesa personale"
+  desc_schools_i3_1: "Informazione su richiesta via"
+  desc_schools_i3_2: "email"
+
   desc_contact: "Contattaci se ti servono altre informazioni sul Fighting Club Meran/o."
   desc_contactaddress: "Via Otto Huber 31 (di fronte Carolinum)<br>  39012 Merano (BZ)<br> Italia"
   subsection_partners: "Partner"
