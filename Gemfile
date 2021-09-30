@@ -4,8 +4,8 @@ source 'http://rubygems.org'
 
 gem "zen-grids", '2.0.3'
 
-gem "middleman", '4.2.1'
-gem "middleman-compass", '4.0.1'
+gem "middleman", '4.4.0'
+# gem "middleman-compass", '4.0.1'
 
 gem "middleman-livereload", '3.4.6'
 
