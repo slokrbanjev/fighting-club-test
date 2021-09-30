@@ -9,3 +9,5 @@ To deploy this page:
 * add changed files to git `git add -A`
 * commit changes to git `git commit -am "short change msg"`
 * push changes to github `git push`
+
+Bundler version: 1.17.3
