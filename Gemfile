@@ -2,12 +2,12 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "zen-grids"
+gem "zen-grids", '2.0.3'
 
-gem "middleman"
-gem "middleman-compass"
+gem "middleman", '4.2.1'
+gem "middleman-compass", '4.0.1'
 
-gem "middleman-livereload"
+gem "middleman-livereload", '3.4.6'
 
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
-gem 'middleman-sprockets'
+gem 'middleman-sprockets', '4.1.1'

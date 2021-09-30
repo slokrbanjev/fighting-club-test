@@ -2,7 +2,10 @@ require 'zen-grids'
 
 activate :i18n, :mount_at_root => :de
 activate :livereload
-activate :sprockets
+
+activate :sprockets do |sprockets|
+  sprockets.supported_output_extensions = ['.js']
+end
 
 helpers do
   def nav_link(link_text, url, options = {})
